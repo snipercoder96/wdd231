@@ -1,0 +1,148 @@
+:root {
+    --h1-and-p-fonts: 'Fredoka', sans-serif;
+    --body-background: #f5f5f5;
+    --nav-background: #1C2833;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: var(--body-background);
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 24px auto 24px;
+        background: var(--nav-background);
+        color: #fff;
+        padding: 1rem 0 1rem 10px;
+        gap: 1rem;
+    }
+
+    header img {
+        padding-left: 5px;
+    }
+
+    #nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #fff;
+        gap: 1rem;
+        border-bottom: solid 1px var(--nav-background);
+        padding: 1rem;
+    }
+
+    #nav-bar a {
+        text-decoration: none;
+        color: var(--nav-background);
+    }
+
+    #nav-bar a:hover {
+        text-decoration: underline;
+        color: slategray;
+        cursor: pointer;
+    }
+
+    #ham-btn {
+        display: none;
+    }
+
+    h1,
+    h2,
+    p,
+    span,
+    a {
+        font-family: var(--h1-and-p-fonts);
+    }
+
+    main h1 {
+        padding-left: 15px;
+    }
+
+    .about-me {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    section {
+        border: solid 1px var(--nav-background);
+        padding: 1rem;
+    }
+
+    main>section:nth-last-child(1) {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me section img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 6px;
+    }
+
+    .course-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .course-buttons button {
+        width: 400px;
+        padding: 1rem;
+        border-radius: 8px;
+        border: solid 1px var(--nav-background);
+    }
+
+    .course-buttons button:hover{
+        background-color: var(--nav-background);
+        color: #fff;
+        cursor: pointer;
+    }
+
+    #course-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .all-courses,
+    .cse-courses,
+    .wdd-courses {
+        padding: 1rem;
+        margin: 2rem 1rem .5rem;
+        background-color: var(--nav-background);
+        color: #fff;
+        border-radius: 8px;
+        width: 150px;
+        text-align: center;
+    }
+
+    .social-platforms {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: .5rem;
+        background-color: #fff;
+        border-top: solid 1px var(--nav-background);
+        padding: 1rem;
+    }
+
+    .footer-back{
+        background: var(--nav-background);
+        text-align: center;
+        padding: 1rem;
+        color: #fff;
+    }
+
+
+}
