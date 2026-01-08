@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A BYU-Pathway course that lists all the course that needs to be completed">
+    <meta name="author" content="Kevin Mbemba Kiyindou">
+    <title>WDD231 | Kevin's WDD231 Course Page</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/large.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Preloads-->
+    <link rel="preload" as="image" href="./images/me.webp">
+    <link rel="preload" as="image" href="./images/me-300.webp"
+        imagesrcset="./images/me-300.webp 300w, ./images/me-800.webp 800w" imagesizes="(max-width: 767px) 100vw, 300px">
+    <link rel="preload" as="image" href="./images/me-800.webp">
+
+
+    <!-- Javascript -->
+    <script src="./scripts/index.js" defer></script>
+</head>
+<body>
+
+    <div class="sticky-header">
+        <header>
+            <img src="./images/pen-solid-full.svg" alt="A pen logo">
+            <span>Kevin Mbemba Kiyindou</span>
+            <button id="ham-btn" aria-label="hamburger button">&#9776;</button>
+        </header>
+        <nav id="nav-bar">
+            <a href="index.html" class="current-page">Home</a>
+            <a href="chamber/index.html">Chamber</a>
+            <a href="final/index.html">Final</a>
+        </nav> 
+    </div>
+
+    <main>
+        <h1>Home</h1>
+        <div class="about-me">
+            <section>
+                <h2>About Me</h2>
+                <p>My name is Kevin Mbemba Kyindou. I am 19 years old and will be turning 20 on November 3rd. I love playing games such as chess and Call of Duty. In my free time, I also enjoy coding — working with HTML, CSS, JavaScript, and C#.
+            </section>
+        <section>
+            <h2>Student photo</h2>
+            <img src="./images/me-300.webp" srcset="./images/me-300.webp 300w, ./images/me-800.webp 800w"
+                sizes="(max-width: 767px) 100vw, 300px" alt="An image of Myself" width="300" height="400">
+        </section>
+
+        </div>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="course-buttons"> 
+                <button id="all" aria-label="all button">All</button> 
+                <button id="cse" aria-label="CSE button">CSE</button> 
+                <button id="wdd" aria-label="WDD">WDD</button> 
+            </div>
+            <div id="course-list"> 
+                <!-- JS will inject course cards here --> 
+            </div> 
+            <p>The total list of credits listed for this course is: <span id="total-credits"></span></p>
+        </section>    
+    </main>
+    <footer>
+        <div class="social-platforms">
+            <a href="https://github.com/snipercoder96" aria-label="Kevins Github page"><img src="./images/github-brands-solid-full.svg" alt="Github icon" loading="lazy" width="50" height="50"></a>
+            <a href="https://www.linkedin.com/in/summer-soldiertm-4a49502b6" aria-label="Kevins linkedin page"><img src="./images/linkedin-brands-solid-full.svg" alt="LinkedIn icon" loading="lazy" width="50" height="50"></a>
+            <a href="https://www.facebook.com/kevin.mbemba.208794" aria-label="Kevins facebook"><img src="./images/facebook-brands-solid-full.svg" alt="Facebook icon" loading="lazy" width="50" height="50"></a>   
+        </div>
+
+        <div class="footer-back">
+            <p>&copy; | <span id="year"></span> | Kevin Mbemba Kiyindou | South Africa</p>
+            <p>Last Modified: <span id="LastModified"></span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
