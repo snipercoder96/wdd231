@@ -117,10 +117,16 @@ courseButtons[0].addEventListener("click", () => {
             const div = document.createElement("div");
             div.classList.add("all-courses");
             div.textContent = displayCourse;
-            courseList.appendChild(div);
 
             const credits = courses.reduce((accumulator, course) => { return accumulator + course.credits; }, 0);
             totalCredits.textContent = credits;
+
+            if (course.completed === true) {
+                div.classList.add("completed");
+            } else {
+                div.classList.add("incomplete");
+            }
+            courseList.appendChild(div);
         });
     } else {
         courseList.textContent = "";
@@ -137,10 +143,17 @@ courseButtons[1].addEventListener("click", () => {
             const div = document.createElement("div");
             div.classList.add("cse-courses")
             div.textContent = displayCourse;
-            courseList.appendChild(div);
 
             const credits = cseCourse.reduce((accumulator, course) => { return accumulator + course.credits; }, 0);
             totalCredits.textContent = credits;
+
+            if (course.completed === true) {
+                div.classList.add("completed");
+            } else {
+                div.classList.add("incomplete");
+            }
+            courseList.appendChild(div);
+
         });
     } else {
         courseList.textContent = "";
@@ -158,10 +171,16 @@ courseButtons[2].addEventListener("click", () => {
             const div = document.createElement("div");
             div.classList.add("wdd-courses");
             div.textContent = displayCourse;
-            courseList.appendChild(div);
 
             const credits = wddCourse.reduce((accumulator, course) => { return accumulator + course.credits; }, 0);
             totalCredits.textContent = credits;
+
+            if (course.completed === true) {
+                div.classList.add("completed");
+            } else {
+                div.classList.add("incomplete");
+            }
+            courseList.appendChild(div);
         });
     } else {
         courseList.textContent = "";

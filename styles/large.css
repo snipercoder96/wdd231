@@ -104,7 +104,7 @@
         border: solid 1px var(--nav-background);
     }
 
-    .course-buttons button:hover{
+    .course-buttons button:hover {
         background-color: var(--nav-background);
         color: #fff;
         cursor: pointer;
@@ -137,11 +137,29 @@
         padding: 1rem;
     }
 
-    .footer-back{
+    .footer-back {
         background: var(--nav-background);
         text-align: center;
         padding: 1rem;
         color: #fff;
+    }
+
+    .all-courses.completed::after,
+    .cse-courses.completed::after,
+    .wdd-courses.completed::after {
+        content: "✔";
+        color: green;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    .all-courses.incomplete::after,
+    .cse-courses.incomplete::after,
+    .wdd-courses.incomplete::after {
+        content: "❌";
+        color: red;
+        font-weight: bold;
+        margin-left: 5px;
     }
 
 
