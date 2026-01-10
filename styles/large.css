@@ -40,15 +40,34 @@
         padding: 1rem;
     }
 
-    #nav-bar a {
+    #nav-bar a:not(:nth-of-type(1)) {
         text-decoration: none;
         color: var(--nav-background);
+    }
+
+    #nav-bar a:hover:not(:nth-of-type(2), :nth-of-type(3)) {
+        text-decoration: underline;
+        color: #fff;
     }
 
     #nav-bar a:hover {
         text-decoration: underline;
         color: slategray;
         cursor: pointer;
+    }
+
+    .sticky-header {
+        top: 0;
+        position: sticky;
+        z-index: 1;
+    }
+
+    .current-page {
+        background: var(--nav-background);
+        padding: .3rem 50px;
+        color: #fff;
+        border-radius: 6px;
+        text-decoration: none;
     }
 
     #ham-btn {
