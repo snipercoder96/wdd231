@@ -53,7 +53,7 @@
         background-color: var(--nav-background);
     }
 
-    #nav-bar.show a {
+    #nav-bar.show a:not(:nth-of-type(1)) {
         display: block;
         border-bottom: solid 1px #fff;
         color: #fff;
@@ -78,7 +78,7 @@
 
     .current-page {
         background: #fff;
-        color: var(--nav-background) !important;
+        color: var(--nav-background);
     }
 
     h1,
