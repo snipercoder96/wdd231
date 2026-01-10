@@ -78,7 +78,7 @@
 
     .current-page {
         background: #fff;
-        color: var(--nav-background);
+        color: var(--nav-background) !important;
     }
 
     h1,
