@@ -79,6 +79,8 @@
     .current-page {
         background: #fff;
         color: var(--nav-background);
+        padding: 1rem 0;
+        text-decoration: none;
     }
 
     h1,
