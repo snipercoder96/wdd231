@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Sunrise Café",
+        "address": "123 Main Street, Brakpan, Gauteng",
+        "phone": "+27 11 555 1234",
+        "website": "https://sunrisecafe.co.za",
+        "email": "info@sunrisecafe.co.za",
+        "image": "./images/cozy-cafe.png",
+        "membership": 3,
+        "description": "A cozy café serving fresh coffee, pastries, and light meals.",
+        "tagline": "Wake up to flavor!"
+    },
+    {
+        "name": "Tech Solutions SA",
+        "address": "45 Innovation Drive, Johannesburg, Gauteng",
+        "phone": "+27 11 555 5678",
+        "website": "https://techsolutions.co.za",
+        "email": "contact@techsolutions.co.za",
+        "image": "./images/tech-solutions.png",
+        "membership": 2,
+        "description": "IT consulting and software development services for local businesses.",
+        "tagline": "Innovating your business future"
+    },
+    {
+        "name": "GreenLeaf Landscaping",
+        "address": "78 Garden Road, Benoni, Gauteng",
+        "phone": "+27 11 555 2468",
+        "website": "https://greenleaf.co.za",
+        "email": "support@greenleaf.co.za",
+        "image": "./images/greenleaf.png",
+        "membership": 1,
+        "description": "Professional landscaping and garden maintenance services.",
+        "tagline": "Bringing nature to your doorstep"
+    },
+    {
+        "name": "Brakpan Fitness Center",
+        "address": "12 Wellness Avenue, Brakpan, Gauteng",
+        "phone": "+27 11 555 1357",
+        "website": "https://brakpanfitness.co.za",
+        "email": "info@brakpanfitness.co.za",
+        "image": "./images/modern-gym.png",
+        "membership": 3,
+        "description": "Modern gym with personal trainers, classes, and wellness programs.",
+        "tagline": "Strength. Wellness. Community."
+    },
+    {
+        "name": "Bright Future Academy",
+        "address": "90 Education Lane, Springs, Gauteng",
+        "phone": "+27 11 555 9753",
+        "website": "https://brightfutureacademy.co.za",
+        "email": "admin@brightfutureacademy.co.za",
+        "image": "./images/bright-future.png",
+        "membership": 2,
+        "description": "Private academy offering tutoring and after-school programs.",
+        "tagline": "Learning today, leading tomorrow"
+    },
+    {
+        "name": "Golden Harvest Market",
+        "address": "56 Commerce Street, Boksburg, Gauteng",
+        "phone": "+27 11 555 8642",
+        "website": "https://goldenharvestmarket.co.za",
+        "email": "sales@goldenharvestmarket.co.za",
+        "image": "./images/golden-market.png",
+        "membership": 1,
+        "description": "Local grocery store specializing in organic and farm-fresh produce.",
+        "tagline": "Fresh from farm to table"
+    },
+    {
+        "name": "Skyline Travel Agency",
+        "address": "22 Adventure Road, Kempton Park, Gauteng",
+        "phone": "+27 11 555 7531",
+        "website": "https://skylinetravel.co.za",
+        "email": "booking@skylinetravel.co.za",
+        "image": "./images/travel-agency.png",
+        "membership": 2,
+        "description": "Travel agency offering tours, holiday packages, and corporate travel solutions.",
+        "tagline": "Your journey starts here"
+    }
+]

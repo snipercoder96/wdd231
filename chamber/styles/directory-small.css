@@ -1,0 +1,222 @@
+:root {
+    /* */
+    --navy-blue: #1A3D6D;
+    --gold-col: #FFD700;
+    --body-col: #f5f5f5;
+    --white-col: #fff;
+    --text-col: #333;
+    --header-font: 'Montserrat', sans-serif;
+    --p-font: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: var(--body-col);
+        width: 100vw;
+    }
+
+    body,
+    main,
+    footer {
+        width: 100vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: var(--header-font);
+        color: var(--text-col);
+    }
+
+    p,
+    span {
+        font-family: var(--p-font);
+        color: var(--text-col);
+    }
+
+
+    header {
+        display: grid;
+        grid-template-columns: 24px auto 44px;
+        column-gap: .8rem;
+        padding: 10px 0 10px 16px;
+        margin-left: 0;
+        background: var(--navy-blue);
+    }
+
+    header img {
+        display: block;
+        width: 50px;
+        height: auto;
+    }
+
+    header span {
+        padding: 10px 0 10px 30px;
+        text-align: left;
+        color: var(--gold-col);
+    }
+
+    nav {
+        display: none;
+    }
+
+    .navigation {
+        top: 0;
+        position: fixed;
+        z-index: 2;
+        width: 100vw;
+    }
+
+    #nav-toggle.show {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem;
+        background: var(--navy-blue);
+    }
+
+    #nav-toggle.show a {
+        color: var(--white-col);
+        text-decoration: none;
+        text-align: left;
+        padding: 1rem 0;
+    }
+
+    #nav-toggle.show a:visited {
+        color: var(--gold-col);
+    }
+
+    #nav-toggle.show a.current-page {
+        border-bottom: solid 1px var(--gold-col);
+    }
+
+    #ham-btn {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: none;
+        color: var(--gold-col);
+        padding: 10px 10px 0 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        display: block;
+        width: 100%;
+        padding: 0;
+        height: 300px;
+        margin: 0 0 20px 0;
+    }
+
+    main h1 {
+        text-align: left;
+        margin: 0 0 0 16px;
+    }
+
+    section:nth-of-type(1),
+    section:not(:nth-of-type(1)) {
+        background: var(--navy-blue);
+        padding: 1rem;
+        margin: 20px 0;
+    }
+
+    section div p,
+    section:nth-of-type(1) div {
+        color: var(--white-col);
+    }
+
+    #business-info.grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+    }
+
+    #business-info.list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #business-info.grid .members-card{
+        background: var(--navy-blue);
+        margin: 30px 0;
+        text-align: left;
+    }
+
+    #business-info.list .members-card{
+        background: var(--navy-blue);
+        padding: 2rem;
+        margin: 20px 0;
+        width: 500px;
+    }
+
+    #business-info.grid .members-card img{
+        display: block;
+        width: 100px;
+        height: auto;
+        overflow: hidden;
+        object-fit: cover;
+        margin: 1rem auto;
+    }
+
+    #business-info.list .members-card img {
+        display: block;
+        width: 100px;
+        height: auto;
+        overflow: hidden;
+        object-fit: cover;
+        margin: 1rem auto;
+    }
+
+    #business-info.grid .members-card p,
+    #business-info.grid .members-card h3 {
+        padding-left: .5rem;
+    }
+
+
+    .button-order button.active {
+        background: var(--gold-col);
+        color: var(--navy-blue);
+        border-radius: 4px;
+    }
+
+
+    .members-card p,
+    .members-card span {
+        color: var(--white-col);
+    }
+
+    .footer-info p,
+    .footer-info span {
+        text-align: left;
+        color: var(--white-col);
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .weather-info section:nth-of-type(1) h2,
+    #current-weather h2,
+    #weather-forecast h2,
+    .members-card h3,
+    .footer-info section:nth-of-type(1) h3{
+        color: var(--gold-col);
+    }
+
+
+
+}

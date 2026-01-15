@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Business Networking Breakfast",
+        "date": "2026-01-20",
+        "time": "08:00",
+        "location": "Brakpan Civic Centre",
+        "description": "Connect with local entrepreneurs over coffee and breakfast. Bring business cards!",
+        "image": "networking-breakfast.jpg"
+    },
+    {
+        "title": "Digital Marketing Workshop",
+        "date": "2026-01-25",
+        "time": "14:00",
+        "location": "TechHub, Johannesburg",
+        "description": "Learn how to grow your business online with SEO, social media, and email campaigns.",
+        "image": "digital-marketing.jpg"
+    },
+    {
+        "title": "Chamber Annual Gala",
+        "date": "2026-02-10",
+        "time": "18:30",
+        "location": "Brakpan Country Club",
+        "description": "Celebrate local business achievements with dinner, awards, and entertainment.",
+        "image": "annual-gala.jpg"
+    },
+    {
+        "title": "Startup Pitch Night",
+        "date": "2026-02-15",
+        "time": "17:00",
+        "location": "Innovation Hub, Pretoria",
+        "description": "Watch local startups pitch their ideas to investors and mentors.",
+        "image": "pitch-night.jpg"
+    },
+    {
+        "title": "Women in Business Luncheon",
+        "date": "2026-02-22",
+        "time": "12:00",
+        "location": "Springs Conference Hall",
+        "description": "Empowering women entrepreneurs with networking and guest speakers.",
+        "image": "women-business.jpg"
+    },
+    {
+        "title": "Local Vendor Market Day",
+        "date": "2026-03-05",
+        "time": "09:00",
+        "location": "Brakpan Town Square",
+        "description": "Support local vendors and artisans. Food trucks, crafts, and live music.",
+        "image": "market-day.jpg"
+    },
+    {
+        "title": "Youth Career Expo",
+        "date": "2026-03-12",
+        "time": "10:00",
+        "location": "Brakpan High School Hall",
+        "description": "High school students meet employers, explore career paths, and attend resume workshops.",
+        "image": "career-expo.jpg"
+    }
+]

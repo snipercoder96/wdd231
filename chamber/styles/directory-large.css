@@ -1,0 +1,254 @@
+:root {
+    /* */
+    --navy-blue: #1A3D6D;
+    --gold-col: #FFD700;
+    --body-col: #f5f5f5;
+    --white-col: #fff;
+    --text-col: #333;
+    --header-font: 'Montserrat', sans-serif;
+    --p-font: 'Open Sans', sans-serif;
+}
+
+
+
+@media screen and (min-width:768px){
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+
+    header{
+        display: grid;
+        grid-template-columns: 24px auto 24px;
+        background: var(--navy-blue);
+        padding: 10px 0 10px 10px;
+    }
+
+    header img {
+        width: 50px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    header span {
+        margin-left: 40px;
+        padding: 10px 0;
+        font-size: larger;
+        color: var(--gold-col);
+    }
+
+    body{
+        background: var(--body-col);
+    }
+
+    #ham-btn {
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 0 20px 10px;
+        border-bottom: solid 1px var(--navy-blue);
+        background: var(--white-col);
+    }
+
+    nav a{
+        text-decoration: none;
+        color: var(--text-col);
+        font-size: 1.3rem;
+    }
+
+    nav a:hover{
+        color: var(--gold-col);
+        text-decoration: underline;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #nav-toggle .current-page{
+        border-bottom: solid 1px var(--navy-blue);
+        border-width: 4px;
+    }
+
+    .hero-image{
+        width: 100%;
+        min-width: 768px;
+    }
+
+    h1, 
+    h2, 
+    h3 {
+        font-family: var(--header-font);
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    h1{
+        font-size: 3.5rem;
+        color: var(--text-col);
+        text-align: center;
+    }
+
+    span, p,
+    #events-container {
+        font-family: var(--p-font);
+    }
+
+
+    .weather-info section{
+        background: var(--navy-blue);
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 800px;
+        display: block;
+    }
+
+    .weather-info section:nth-of-type(1) div,
+    .weather-info section #events-container p,
+    section #weather-forecast p,
+    section #current-weather p {
+        color: var(--white-col);
+    }
+    .weather-info section:nth-of-type(1) h2,
+    .weather-info section #events-container h2,
+    section #weather-forecast h2,
+    section #current-weather h2{
+        color: var(--gold-col);
+        font-size: 2.4rem;
+    }
+    .header-to-center{
+        text-align: center;
+        color: var(--text-col);
+        font-size: 2.4rem;
+    }
+
+
+    #business-info.grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 1rem;
+    }
+
+    #business-info.list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #business-info.grid .members-card{
+        background: var(--navy-blue);
+        margin: 30px 0;
+        text-align: center;
+        
+    }
+
+    #business-info.list .members-card{
+        background: var(--navy-blue);
+        padding: 1rem;
+        margin: 20px 0;
+        width: 500px;
+        text-align: center;
+    }
+
+    #business-info.grid .members-card img{
+        display: block;
+        width: 300px;
+        height: auto;
+        overflow: hidden;
+        object-fit: cover;
+        margin: 1rem auto;
+    }
+
+    #business-info.list .members-card img {
+        display: block;
+        width: 300px;
+        height: auto;
+        overflow: hidden;
+        object-fit: cover;
+        margin: 1rem auto;
+    }
+
+    #business-info.grid .members-card p,
+    #business-info.grid .members-card h3 {
+        padding-left: .5rem;
+    }
+
+
+    .button-order button.active {
+        background: var(--gold-col);
+        color: var(--navy-blue);
+        border-radius: 4px;
+    }
+
+    .button-order {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .button-order button{
+        padding: 1rem;
+        width: 80px;
+        border-radius: 4px;
+    }
+
+    .button-order button:hover {
+        cursor: pointer;
+        background-color: var(--gold-col);
+    }
+
+
+    .members-card p,
+    .members-card span {
+        color: var(--white-col);
+    }
+
+    .footer-info p,
+    .footer-info span {
+        text-align: left;
+        color: var(--white-col);
+    }
+
+    .footer-info section{
+        background: var(--navy-blue);
+        padding: 1rem;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .socials img {
+        width: 80px;
+    }
+
+    footer section:nth-of-type(2) p{
+        text-align: center;
+    }
+
+    .weather-info section:nth-of-type(1) h2,
+    #current-weather h2,
+    #weather-forecast h2,
+    .members-card h3,
+    .footer-info section:nth-of-type(1) h3 {
+        color: var(--gold-col);
+    }
+
+    .navigation {
+        top: 0;
+        position: fixed;
+        z-index: 2;
+        width: 100vw;
+    }
+}

@@ -1,0 +1,40 @@
+header h1 {
+    color: slateblue;
+    font-size: 2rem;
+}
+
+h1, p, h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#cards {
+    background-color: rgba(105, 90, 205, 0.171);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0);
+    border-radius: 8px;
+}
+
+#cards section{
+    background-color: rgba(105, 90, 205, 0.377);
+    padding: 1rem;
+    border: solid 1px slateblue;
+}
+
+#cards section h2 {
+    color: slateblue;
+    font-size: 2rem;
+}
+
+#cards section img {
+    display: block;
+    margin: 0 auto;
+    width: 340px;
+    height: 440px;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: 0 12px 12px rgba(0, 0, 0);
+}
