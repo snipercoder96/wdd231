@@ -40,6 +40,10 @@
         color: var(--gold-col);
     }
 
+    nav a{
+        font-family: var(--p-font);
+    }
+
     body{
         background: var(--body-col);
     }
@@ -192,6 +196,17 @@
         flex-direction: row;
         justify-content: center;
         gap: 1rem;
+    }
+
+    #business-info.grid .members-card p a,
+    #business-info.grid .members-card p a {
+        color: var(--gold-col);
+    }
+
+
+    #business-info.list .members-card p a,
+    #business-info.list .members-card p a {
+        color: var(--gold-col);
     }
 
     .button-order button{

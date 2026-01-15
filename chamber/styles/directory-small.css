@@ -1,5 +1,4 @@
 :root {
-    /* */
     --navy-blue: #1A3D6D;
     --gold-col: #FFD700;
     --body-col: #f5f5f5;
@@ -20,12 +19,6 @@
     body {
         background-color: var(--body-col);
         width: 100vw;
-    }
-
-    body,
-    main,
-    footer {
-        width: 100vw;
         margin: 0 auto;
         text-align: center;
     }
@@ -43,13 +36,11 @@
         color: var(--text-col);
     }
 
-
     header {
         display: grid;
         grid-template-columns: 24px auto 44px;
         column-gap: .8rem;
         padding: 10px 0 10px 16px;
-        margin-left: 0;
         background: var(--navy-blue);
     }
 
@@ -114,7 +105,6 @@
     .hero-image {
         display: block;
         width: 100%;
-        padding: 0;
         height: 300px;
         margin: 0 0 20px 0;
     }
@@ -124,22 +114,25 @@
         margin: 0 0 0 16px;
     }
 
-    section:nth-of-type(1),
-    section:not(:nth-of-type(1)) {
+    .weather-info section {
         background: var(--navy-blue);
         padding: 1rem;
         margin: 20px 0;
     }
 
-    section div p,
-    section:nth-of-type(1) div {
+    .weather-info div p,
+    .weather-info section:first-of-type div {
         color: var(--white-col);
+    }
+
+    #business-info {
+        max-width: 500px;
+        width: 100vw;
     }
 
     #business-info.grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-template-rows: auto;
     }
 
     #business-info.list {
@@ -148,33 +141,22 @@
         align-items: center;
     }
 
-    #business-info.grid .members-card{
+    #business-info.grid .members-card,
+    #business-info.list .members-card {
         background: var(--navy-blue);
-        margin: 30px 0;
-        text-align: left;
+        margin: 20px 0;
     }
 
-    #business-info.list .members-card{
-        background: var(--navy-blue);
+    #business-info.list .members-card {
         padding: 2rem;
-        margin: 20px 0;
         width: 500px;
     }
 
-    #business-info.grid .members-card img{
-        display: block;
-        width: 100px;
-        height: auto;
-        overflow: hidden;
-        object-fit: cover;
-        margin: 1rem auto;
-    }
-
+    #business-info.grid .members-card img,
     #business-info.list .members-card img {
         display: block;
         width: 100px;
         height: auto;
-        overflow: hidden;
         object-fit: cover;
         margin: 1rem auto;
     }
@@ -184,13 +166,22 @@
         padding-left: .5rem;
     }
 
+    .button-order {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .button-order button {
+        width: 60px;
+        height: 35px;
+        border-radius: 4px;
+    }
 
     .button-order button.active {
         background: var(--gold-col);
         color: var(--navy-blue);
-        border-radius: 4px;
     }
-
 
     .members-card p,
     .members-card span {
@@ -205,18 +196,25 @@
 
     .socials {
         display: flex;
-        flex-direction: row;
         justify-content: center;
+        padding: 20px 0;
     }
 
-    .weather-info section:nth-of-type(1) h2,
+    .weather-info section:first-of-type h2,
     #current-weather h2,
     #weather-forecast h2,
     .members-card h3,
-    .footer-info section:nth-of-type(1) h3{
+    .footer-info section:first-of-type h3 {
         color: var(--gold-col);
     }
 
+    #business-info.grid .members-card p a,
+    #business-info.list .members-card p a {
+        color: var(--gold-col);
+    }
 
-
+    .footer-info section {
+        background: var(--navy-blue);
+        padding: 1rem;
+    }
 }
