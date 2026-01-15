@@ -38,7 +38,7 @@
 
     header {
         display: grid;
-        grid-template-columns: 24px auto 44px;
+        grid-template-columns: 24px auto 24px;
         column-gap: .8rem;
         padding: 10px 0 10px 16px;
         background: var(--navy-blue);
@@ -58,13 +58,6 @@
 
     nav {
         display: none;
-    }
-
-    .navigation {
-        top: 0;
-        position: fixed;
-        z-index: 2;
-        width: 100vw;
     }
 
     #nav-toggle.show {
