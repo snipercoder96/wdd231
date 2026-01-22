@@ -100,6 +100,24 @@
         color: var(--text-col);
     }
 
+
+    header h1,
+    header h2,
+    header h3 {
+        color: var(--white-col);
+
+    }
+
+    section {
+        color: var(--white-col);
+    }
+
+    section h1,
+    section h2,
+    section h3 {
+        color: var(--gold-col);
+    }
+
     .hero-image img {
         width: 100%;
         min-width: 768px;
