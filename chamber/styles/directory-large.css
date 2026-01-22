@@ -11,7 +11,7 @@
 
 
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
 
     *,
     *::before,
@@ -20,7 +20,7 @@
     }
 
 
-    header{
+    header {
         display: grid;
         grid-template-columns: 24px auto 24px;
         background: var(--navy-blue);
@@ -40,11 +40,11 @@
         color: var(--gold-col);
     }
 
-    nav a{
+    nav a {
         font-family: var(--p-font);
     }
 
-    body{
+    body {
         background: var(--body-col);
     }
 
@@ -52,7 +52,15 @@
         display: none;
     }
 
-    nav{
+    .weather-info section p,
+    .members-card p,
+    .members-card span,
+    .footer-info p,
+    .footer-info span {
+        color: var(--white-col);
+    }
+
+    nav {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -61,51 +69,52 @@
         background: var(--white-col);
     }
 
-    nav a{
+    nav a {
         text-decoration: none;
         color: var(--text-col);
         font-size: 1.3rem;
     }
 
-    nav a:hover{
+    nav a:hover {
         color: var(--gold-col);
         text-decoration: underline;
         transition: all 0.5s ease-in-out;
     }
 
-    #nav-toggle .current-page{
+    #nav-toggle .current-page {
         border-bottom: solid 1px var(--navy-blue);
         border-width: 4px;
     }
 
-    .hero-image{
+    .hero-image {
         width: 100%;
         min-width: 768px;
     }
 
-    h1, 
-    h2, 
+    h1,
+    h2,
     h3 {
         font-family: var(--header-font);
     }
 
-    p{
+    p {
         font-size: 1.2rem;
     }
 
-    h1{
+    h1 {
         font-size: 3.5rem;
         color: var(--text-col);
         text-align: center;
     }
 
-    span, p,
+    span,
+    p,
     #events-container {
         font-family: var(--p-font);
     }
 
 
-    .weather-info section{
+    .weather-info section {
         background: var(--navy-blue);
         padding: 1rem;
         margin: 1rem auto;
@@ -119,14 +128,16 @@
     section #current-weather p {
         color: var(--white-col);
     }
+
     .weather-info section:nth-of-type(1) h2,
     .weather-info section #events-container h2,
     section #weather-forecast h2,
-    section #current-weather h2{
+    section #current-weather h2 {
         color: var(--gold-col);
         font-size: 2.4rem;
     }
-    .header-to-center{
+
+    .header-to-center {
         text-align: center;
         color: var(--text-col);
         font-size: 2.4rem;
@@ -150,14 +161,14 @@
         align-items: center;
     }
 
-    #business-info.grid .members-card{
+    #business-info.grid .members-card {
         background: var(--navy-blue);
         margin: 30px 0;
         text-align: center;
-        
+
     }
 
-    #business-info.list .members-card{
+    #business-info.list .members-card {
         background: var(--navy-blue);
         padding: 1rem;
         margin: 20px 0;
@@ -165,7 +176,7 @@
         text-align: center;
     }
 
-    #business-info.grid .members-card img{
+    #business-info.grid .members-card img {
         display: block;
         width: 300px;
         height: auto;
@@ -213,7 +224,7 @@
         color: var(--gold-col);
     }
 
-    .button-order button{
+    .button-order button {
         padding: 1rem;
         width: 80px;
         border-radius: 4px;
@@ -236,7 +247,7 @@
         color: var(--white-col);
     }
 
-    .footer-info section{
+    .footer-info section {
         background: var(--navy-blue);
         padding: 1rem;
     }
@@ -252,7 +263,7 @@
         width: 80px;
     }
 
-    footer section:nth-of-type(2) p{
+    footer section:nth-of-type(2) p {
         text-align: center;
     }
 
