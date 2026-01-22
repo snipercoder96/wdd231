@@ -109,13 +109,11 @@
 
     header h1,
     header h2,
-    header h3 {
+    header h3,
+    header p {
         color: var(--white-col);
     }
 
-    header p{
-        color: var(--white-col);
-    }
 
     .hero-image h1,
     .hero-image h2 {
