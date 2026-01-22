@@ -104,18 +104,24 @@
 
     .hero-image{
         position: relative;
+        color: var(--text-col);
     }
 
     header h1,
     header h2,
     header h3 {
         color: var(--white-col);
-
     }
 
-    section {
+    header p{
         color: var(--white-col);
     }
+
+    .hero-image h1,
+    .hero-image h2 {
+        color: var(--navy-blue);
+    }
+
 
     section h1,
     section h2,
@@ -132,6 +138,13 @@
         padding: 1rem;
         border-radius: 8px;
         border: solid 1px var(--white-col);
+        color: var(--navy-blue)
+    }
+
+    .cta h2,
+    .cta p,
+    .cta a {
+        color: var(--navy-blue);
     }
 
 

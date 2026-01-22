@@ -80,6 +80,12 @@
         position: relative;
     }
 
+    .hero-image h1,
+    .hero-image h2 {
+        color: var(--navy-blue);
+        
+    }
+
     .cta {
         position: absolute;
         bottom: 20px;
@@ -89,6 +95,12 @@
         padding: 1rem;
         border-radius: 8px;
         border: solid 1px var(--white-col);
+    }
+
+    .cta h2,
+    .cta p,
+    .cta a {
+        color: var(--navy-blue);
     }
 
     .cta:hover {
@@ -103,13 +115,10 @@
 
     header h1,
     header h2,
-    header h3 {
+    header h3,
+    header p {
         color: var(--white-col);
 
-    }
-
-    section {
-        color: var(--white-col);
     }
 
     section h1,
