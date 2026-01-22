@@ -2,7 +2,7 @@
 function footerInfo() {
     const modifiedDate = document.querySelectorAll("#current-year, #lastModified");
     modifiedDate[0].textContent = new Date().getFullYear();
-    
+
     modifiedDate[1].textContent = document.lastModified;
 }
 
@@ -37,20 +37,23 @@ async function loadTodaysEvent() {
 // Current Weather
 async function weatherInfo() {
     try {
-        const response = await fetch("https://api.weatherapi.com/v1/current.json?key=4f61b733ffd7417b9b1145141261401&q=Kempton Park, South Africa&aqi=no");
+        const response = await fetch("https://api.weatherapi.com/v1/current.json?key=4f61b733ffd7417b9b1145141261401&q=Kempton Park, ZA&aqi=no");
         if (!response.ok) throw new Error("Weather API error");
         const data = await response.json();
 
         const weatherDiv = document.createElement("div");
         weatherDiv.id = "current-weather";
+        const iconURL = `https:${data.current.condition.icon}`;
+
         weatherDiv.innerHTML = `
             <h2>Current Weather</h2>
-            <img src="${data.current.condition.icon}" alt="Weather icon" loading="lazy">
+            <img src="${iconURL}" alt="Weather icon" loading="lazy" width=64 height=64>
             <p><strong>Condition</strong>: ${data.current.condition.text}</p>
             <p><strong>Temperature</strong>: ${data.current.temp_c} &deg;C</p>
             <p><strong>Humidity</strong>: ${data.current.humidity}%</p>
         `;
         document.getElementById("currentWeather").appendChild(weatherDiv);
+        console.log("Weather icon URL:", iconURL);
     } catch (error) {
         document.getElementById("currentWeather").textContent = `Error retrieving weather: ${error}`;
     }
@@ -122,7 +125,7 @@ function viewToggle() {
     const gridBtn = document.getElementById("grid-view");
     const listBtn = document.getElementById("list-view");
 
-    businessInfo.classList.add("grid"); 
+    businessInfo.classList.add("grid");
 
     gridBtn.addEventListener("click", () => {
         businessInfo.classList.add("grid");

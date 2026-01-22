@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A chamber of commerce webpage that showcasing South Africa and its local business interests.">
+    <meta name="description"
+        content="A chamber of commerce home webpage that showcases South Africa and its local business interests.">
     <meta name="author" content="Kevin Mbemba Kiyindou">
     <meta property="og:title" content="Kevin's Chamber of Commerce Page">
     <meta property="og:description"
@@ -23,35 +24,44 @@
 
     <!-- Favicon -->
     <link rel="icon" href="./images/chamber-of-com.webp">
-    <title>South Africa | Chamber Of Commerce | Directory</title>
-    <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./styles/directory-small.css">
-    <link rel="stylesheet" href="./styles/directory-large.css">
+    <link rel="stylesheet" href="./styles/index-small.css">
+    <link rel="stylesheet" href="./styles/index-large.css">
 
     <!-- Javascript -->
-    <script src="./scripts/directory.js" defer></script>
+    <script type="module" src="./scripts/main-index.mjs"></script>
+    <title>South Africa | Chamber Of Commerce | Home</title>
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <div class="navigation">
         <header>
             <img src="./images/logo.jpg" alt="South Africa Chamber Of Commerce logo">
             <span>South Africa Chamber Of Commerce</span>
             <button id="ham-btn" aria-label="toggle navigation">☰</button>
-        </header> 
+        </header>
         <nav id="nav-toggle">
-            <a href="./index.html">Home</a>
-            <a href="#" class="current-page" aria-current="page">Directory</a>
+            <a href="#" class="current-page">Home</a>
+            <a href="./directory.html"  aria-current="page">Directory</a>
             <a href="./join.html">Join</a>
             <a href="./discover.html">Discover</a>
         </nav>
     </div>
-    
-    <img class="hero-image" src="./images/hero-image.jpg" alt="South Africas Chamber Of Commerce hero image">
+
+    <!-- Hero Image -->
+    <section class="hero-image">
+        <img src="./images/hero-image.jpg" alt="South Africa Chamber Of Commerce hero image" width="700">
+        <div class="cta">
+            <a href="join.html" class="join-button">Join the Chamber Today</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
     <main>
         <h1>Home</h1>
+
         <div class="weather-info">
             <section>
                 <h2>Events</h2>
@@ -59,12 +69,15 @@
                     <!-- Inject javascript here -->
                 </div>
             </section>
+
             <section id="currentWeather">
                 <!-- Inject javascript here for current(todays) weather -->
             </section>
+
             <section id="weatherForecast">
                 <!-- Inject todays tomorrow weather forecast using Javascript here -->
             </section>
+
             <h2 class="header-to-center">Featured Businesses</h2>
             <div class="button-order">
                 <button id="grid-view">&#x1F5C0;</button>
@@ -74,27 +87,35 @@
                 <!-- Inject Javascript here -->
             </div>
         </div>
-
     </main>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-info">
             <section>
                 <h3><strong>South Africa Chamber Of Commerce</strong></h3>
-                <p> South Africa Chamber Of Commerce<br> 123 Business Street, Johannesburg, Gauteng, South Africa<br> Phone: +27 11 555
-                    1234 | Email: info@sachamber.org 
+                <p>
+                    South Africa Chamber Of Commerce<br>
+                    123 Business Street, Johannesburg, Gauteng, South Africa<br>
+                    Phone: +27 11 555 1234 | Email: info@sachamber.org
                 </p>
             </section>
+
             <div class="socials">
                 <a href="https://github.com/snipercoder96" aria-label="Kevins Github page">
-                    <img src="./images/github-brands-solid-full.svg" alt="Github icon" loading="lazy" width="50" height="50">
+                    <img src="./images/github-brands-solid-full.svg" alt="Github icon" loading="lazy" width="50"
+                        height="50">
                 </a>
                 <a href="https://www.linkedin.com/in/summer-soldiertm-4a49502b6" aria-label="Kevins linkedin page">
-                    <img src="./images/linkedin-brands-solid-full.svg" alt="LinkedIn icon" loading="lazy" width="50" height="50">
+                    <img src="./images/linkedin-brands-solid-full.svg" alt="LinkedIn icon" loading="lazy" width="50"
+                        height="50">
                 </a>
                 <a href="https://www.facebook.com/kevin.mbemba.208794" aria-label="Kevins facebook">
-                    <img src="./images/facebook-brands-solid-full.svg" alt="Facebook icon" loading="lazy" width="50" height="50">
+                    <img src="./images/facebook-brands-solid-full.svg" alt="Facebook icon" loading="lazy" width="50"
+                        height="50">
                 </a>
             </div>
+
             <section>
                 <p>&copy; | <span id="current-year"></span> | South Africa Chamber Of Commerce |
                     Last Modified: <span id="lastModified"></span></p>
