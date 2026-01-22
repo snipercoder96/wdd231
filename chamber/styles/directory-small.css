@@ -52,6 +52,14 @@
         
     }
 
+    .weather-info section p,
+    .members-card p,
+    .members-card span,
+    .footer-info p,
+    .footer-info span {
+        color: var(--white-col);
+    }
+
     header img {
         display: block;
         width: 50px;
