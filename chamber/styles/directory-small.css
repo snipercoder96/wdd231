@@ -52,6 +52,21 @@
         
     }
 
+    section {
+        color: var(--white-col);
+    }
+
+    section h1,
+    section h2,
+    section h3 {
+        color: var(--gold-col);
+    }
+
+    section p,
+    section span {
+        color: var(--white-col);
+    }
+
     .weather-info section p,
     .members-card p,
     .members-card span,

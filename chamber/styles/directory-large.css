@@ -122,6 +122,22 @@
         display: block;
     }
 
+
+    section {
+        color: var(--white-col);
+    }
+
+    section h1,
+    section h2,
+    section h3 {
+        color: var(--gold-col);
+    }
+
+    section p,
+    section span {
+        color: var(--white-col);
+    }
+
     .weather-info section:nth-of-type(1) div,
     .weather-info section #events-container p,
     section #weather-forecast p,
