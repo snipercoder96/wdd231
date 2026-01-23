@@ -42,6 +42,7 @@
         column-gap: .8rem;
         padding: 10px 0 10px 16px;
         background: var(--navy-blue);
+        color: var(--white-col);
     }
 
     header img {
@@ -110,7 +111,8 @@
     header h1,
     header h2,
     header h3,
-    header p {
+    header p,
+    header a {
         color: var(--white-col);
     }
 

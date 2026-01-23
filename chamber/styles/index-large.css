@@ -23,6 +23,7 @@
         grid-template-columns: 24px auto 24px;
         background: var(--navy-blue);
         padding: 10px 0 10px 10px;
+        color: var(--white-col);
     }
 
     header img {
@@ -59,7 +60,7 @@
         background: var(--white-col);
     }
 
-    nav a {
+    #nav-toggle a {
         text-decoration: none;
         color: var(--text-col);
         font-size: 1.3rem;
@@ -116,7 +117,8 @@
     header h1,
     header h2,
     header h3,
-    header p {
+    header p,
+    header a {
         color: var(--white-col);
     }
 
