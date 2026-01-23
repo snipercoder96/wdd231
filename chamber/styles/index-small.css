@@ -96,14 +96,14 @@
         font-size: 1rem;
     }
 
-    .hero-image > img {
+    .hero-image>img {
         display: block;
         width: 100%;
         height: auto;
         margin: 0 0 20px 0;
     }
 
-    .hero-image{
+    .hero-image {
         position: relative;
         color: var(--text-col);
     }
@@ -122,10 +122,16 @@
         color: var(--navy-blue);
     }
 
+    section {
+        color: var(--white-col);
+    }
+
 
     section h1,
     section h2,
-    section h3 {
+    section h3,
+    section p,
+    section a {
         color: var(--gold-col);
     }
 
@@ -148,7 +154,7 @@
     }
 
 
-    .cta a{
+    .cta a {
         text-decoration: none;
         color: var(--text-col);
     }
@@ -168,7 +174,7 @@
 
     .weather-info div p,
     .weather-info section:first-of-type div,
-    .weather-info section:first-of-type div > p {
+    .weather-info section:first-of-type div>p {
         color: var(--white-col);
     }
 
@@ -240,12 +246,12 @@
         color: var(--white-col);
     }
 
-    .members-card a{
+    .members-card a {
         text-overflow: ellipsis;
     }
 
     .weather-info section:first-of-type h2,
-    #currentWeather > h2,
+    #currentWeather>h2,
     #weatherForecast h2,
     .members-card h2,
     .footer-info section:first-of-type h3 {
@@ -260,7 +266,7 @@
     }
 
     .header-to-center,
-    main > h1 {
+    main>h1 {
         text-align: center;
     }
 
@@ -280,7 +286,7 @@
         text-align: left;
         color: var(--white-col);
     }
-    
+
 
     #business-info.grid .members-card p a,
     #business-info.list .members-card p a {
