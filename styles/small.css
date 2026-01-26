@@ -62,7 +62,7 @@
     }
 
     #nav-bar.show a:visited {
-        color: var(--nav-background);
+        color: yellow;
     }
 
     #ham-btn {
@@ -185,6 +185,32 @@
         margin: 1rem;
         color: #fff;
         border-radius: 8px;
+        &:hover{
+            background-color: var(--nav-background-hover);
+        }
+    }
+
+    #courseModal { 
+        border: none; 
+        border-radius: 12px; 
+        padding: 2rem; 
+        max-width: 500px; 
+        width: 90%; 
+        box-shadow: 0 8px 24px rgba(0,0,0,0.25); 
+        font-family: "Montserrat", sans-serif; 
+        background: #fff; animation: fadeIn 0.3s;
+
+        &::backdrop{
+            background: rgba(0,0,0,0.6); 
+            backdrop-filter: blur(4px);
+        }
+    }
+
+    #closeModal{
+        border: none;
+        padding: 1rem;
+        width: 100px;
+        border-radius: 6px;
     }
 
     .all-courses.completed::after,

@@ -2,6 +2,7 @@
     --h1-and-p-fonts: 'Fredoka', sans-serif;
     --body-background: #f5f5f5;
     --nav-background: #1C2833;
+    --nav-background-hover: #364c60;
 }
 
 
@@ -144,6 +145,41 @@
         border-radius: 8px;
         width: 150px;
         text-align: center;
+        cursor: pointer;
+
+        &:hover{
+            background-color: var(--nav-background-hover);
+        }
+    }
+
+    #courseModal { 
+        border: none; 
+        border-radius: 12px; 
+        padding: 2rem; 
+        max-width: 500px; 
+        width: 90%; 
+        box-shadow: 0 8px 24px rgba(0,0,0,0.25); 
+        font-family: "Montserrat", sans-serif; 
+        background: #fff; animation: fadeIn 0.3s;
+        
+
+        &::backdrop{
+            background: rgba(0,0,0,0.6); 
+            backdrop-filter: blur(4px);
+        }
+    }
+
+    #closeModal{
+        border: none;
+        padding: 1rem;
+        width: 100px;
+        border-radius: 6px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: var(--nav-background);
+            color: #fff;
+        }
     }
 
     .social-platforms {
