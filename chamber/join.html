@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This join page contains information about the benefit of joining the chamber and a membership application form.">
+    <meta name="author" content="Kevin Mbemba Kiyindou">
+    <meta property="og:title" content="Kevin's Chamber of Commerce Page">
+    <meta property="og:description" content="A chamber of commerce join page about benefits of joining membership">
+    <meta property="og:image" content="https://snipercoder96.github.io/wdd231/chamber/images/hero-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://snipercoder96.github.io/chamber/index.html">
+    <meta property="og:locale" content="en_ZA">
+
+    <!-- Imported Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/chamber-of-com.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/join-small.css">
+    <link rel="stylesheet" href="./styles/join-large.css">
+
+    <!-- Scripts -->
+    <script type="module" src="./scripts/join-main.mjs"></script>
+    <title>South Africa | Chamber Of Commerce | Join</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="navigation">
+        <header>
+            <img src="./images/logo.jpg" alt="South Africa Chamber Of Commerce logo">
+            <span>South Africa Chamber Of Commerce</span>
+            <button id="ham-btn" aria-label="toggle navigation">☰</button>
+        </header>
+        <nav id="nav-toggle">
+            <a href="./index.html">Home</a>
+            <a href="./directory.html" >Directory</a>
+            <a href="./join.html" aria-current="page" class="current-page">Join</a>
+            <a href="./discover.html">Discover</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Image -->
+        <section class="hero-image">
+            <img src="./images/join-us.webp" alt="South Africa Chamber Of Commerce hero image">
+        </section>
+
+        <h1>Join Us Today</h1>
+
+        <div class="grid-display">
+            <!-- Form -->
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Membership Appplication Form</legend>
+                    <label for="firstName"> First Name
+                        <input type="text" id="firstName" name="firstName" title="Please enter your name" required
+                            autocomplete="given-name">
+                    </label>
+
+                    <label for="lastName"> Last Name
+                        <input type="text" id="lastName" name="lastName" title="Please enter your surname" required
+                            autocomplete="family-name">
+                    </label>
+
+                    <label for="organizationTitle"> Organization Title
+                        <input type="text" id="organizationTitle" name="organizationTitle"
+                            title="Please enter an Organizational title" autocomplete="organization-title"
+                            pattern="[A-Za-z\-\s]{7,}">
+                    </label>
+
+                    <label for="emailAddress"> Email Address
+                        <input type="email" id="emailAddress" name="emailAddress" title="Please enter an email address"
+                            autocomplete="email" placeholder="example@domain.com" required>
+                    </label>
+
+                    <label for="mobileNumber"> Mobile Number
+                        <input type="tel" id="mobileNumber" name="mobileNumber" required autocomplete="tel"
+                            title="Please enter your mobile number" placeholder="123-456-789">
+                    </label>
+
+                    <label for="organizationName"> Business/Organization Name
+                        <input type="text" id="organizationName" name="organizationName" required
+                            title="Enter your Business Name here" autocomplete="organization">
+                    </label>
+
+                    <label for="membershipLevel">Membership Level
+                        <select id="membershipLevel" name="membershipLevel" required>
+                            <option disabled selected>Please select</option>
+                            <option>NP membership (Non-Profit)</option>
+                            <option>Bronze Membership</option>
+                            <option>Silver Membership</option>
+                            <option>Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label for="businessDescription">
+                        Business Description <textarea id="businessDescription" name="businessDescription"></textarea>
+                    </label>
+
+                    <!-- Invisible timestamp -->
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <button type="submit">Join Membership</button>
+                </fieldset>
+            </form>
+
+            <section id="membershipLevelTitles">
+
+                <div class="membersLevels">
+                    <h1>Non Profit Membership Level</h1>
+                    <button class="toggle-dialog" id="NPO">Learn More</button>
+                </div>
+                <div class="membersLevels">
+                    <h1>🥉Bronze Membership Level</h1>
+                    <button class="toggle-dialog" id="Bronze">Learn More</button>
+                </div>
+                <div class="membersLevels">
+                    <h1>🥈Silver Membership Level</h1>
+                    <button class="toggle-dialog" id="Silver">Learn More</button>
+                </div>
+                <div class="membersLevels">
+                    <h1>👑Gold Membership Level</h1>
+                    <button class="toggle-dialog" id="Gold">Learn More</button>
+                </div>
+            </section>
+            <dialog id="membershipInfo">
+                <!-- Inject javascript to section cards-->
+            </dialog>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <section>
+                <h3><strong>South Africa Chamber Of Commerce</strong></h3>
+                <p>
+                    South Africa Chamber Of Commerce<br>
+                    123 Business Street, Johannesburg, Gauteng, South Africa<br>
+                    Phone: +27 11 555 1234 | Email: info@sachamber.org
+                </p>
+            </section>
+
+            <div class="socials">
+                <a href="https://github.com/snipercoder96" aria-label="Kevins Github page">
+                    <img src="./images/github-brands-solid-full.svg" alt="Github icon" loading="lazy" width="50"
+                        height="50">
+                </a>
+                <a href="https://www.linkedin.com/in/summer-soldiertm-4a49502b6" aria-label="Kevins linkedin page">
+                    <img src="./images/linkedin-brands-solid-full.svg" alt="LinkedIn icon" loading="lazy" width="50"
+                        height="50">
+                </a>
+                <a href="https://www.facebook.com/kevin.mbemba.208794" aria-label="Kevins facebook">
+                    <img src="./images/facebook-brands-solid-full.svg" alt="Facebook icon" loading="lazy" width="50"
+                        height="50">
+                </a>
+            </div>
+
+            <section>
+                <p>&copy; | <span id="current-year"></span> | South Africa Chamber Of Commerce |
+                    Last Modified: <span id="lastModified"></span></p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+:root {
+    /* */
+    --navy-blue: #1A3D6D;
+    --gold-col: #FFD700;
+    --body-col: #f5f5f5;
+    --white-col: #fff;
+    --text-col: #333;
+    --header-font: 'Montserrat', sans-serif;
+    --p-font: 'Open Sans', sans-serif;
+}
+
+
+@media screen and (min-width:768px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    * {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeStack 0.5s ease forwards;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes fadeStack {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    header {
+        display: grid;
+        grid-template-columns: 24px auto 24px;
+        background: var(--navy-blue);
+        padding: 10px 0 10px 10px;
+    }
+
+    header img {
+        width: 50px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    header span {
+        margin-left: 40px;
+        padding: 10px 0;
+        font-size: larger;
+        color: var(--gold-col);
+    }
+
+    nav a {
+        font-family: var(--p-font);
+    }
+
+    body {
+        background: var(--body-col);
+    }
+
+    #ham-btn {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 0 20px 10px;
+        border-bottom: solid 1px var(--navy-blue);
+        background: var(--white-col);
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--text-col);
+        font-size: 1.3rem;
+    }
+
+    nav a:hover {
+        color: var(--gold-col);
+        text-decoration: underline;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #nav-toggle .current-page {
+        border-bottom: solid 1px var(--navy-blue);
+        border-width: 4px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        min-width: 768px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: var(--header-font);
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        color: var(--text-col);
+        text-align: center;
+    }
+
+
+
+    legend,
+    label {
+        color: var(--white-col);
+    }
+
+    legend {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    form {
+        padding: 1rem;
+        background: var(--navy-blue);
+        border-radius: 8px;
+        margin: auto 0;
+    }
+
+    form input,
+    select {
+        display: block;
+        height: 44px;
+        margin: 0 0 20px;
+        border: none;
+        border-radius: 6px;
+
+    }
+
+    .grid-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+        padding: 1rem;
+    }
+
+    input,
+    select,
+    textarea {
+        color: var(--text-col);
+    }
+
+    textarea {
+        width: 100%;
+        height: 100px;
+        display: block;
+        margin: 0 0 20px;
+        border: none;
+        border-radius: 6px;
+
+    }
+
+    input[required] {
+        border-left: solid 5px red;
+    }
+
+    #organizationTitle,
+    textarea:nth-of-type(1) {
+        border-left: solid 5px var(--text-col);
+    }
+
+    form button {
+        padding: .7rem;
+        border: none;
+        border-radius: 8px;
+        margin: 0 auto;
+        display: block;
+        background: var(--white-col);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--gold-col);
+            transition: all 0.4s ease-in-out;
+            border: solid 1px var(--white-col);
+        }
+    }
+
+
+
+    /*----------- Javascript injection here ----------------*/
+
+    #membershipInfo {
+        padding: 1rem;
+
+        &::backdrop {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(3px);
+        }
+    }
+
+    .membersLevels{
+        border-radius: 0 30%;
+    }
+
+    .membersLevels h1,
+    footer h3{
+        color: var(--gold-col);
+    }
+
+
+    #membershipInfo button {
+        padding: .5rem;
+        width: 100px;
+        border-radius: 6px;
+        border: none;
+        background: var(--navy-blue);
+        color: var(--white-col);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--gold-col);
+            border: solid 1px var(--white-col);
+            transition: all 0.4s ease-in-out;
+        }
+    }
+
+    .membersLevels:not(:nth-of-type(1)) {
+        background: var(--navy-blue);
+        padding: 1rem;
+        margin: 30px 0;
+    }
+
+    .membersLevels:nth-of-type(1){
+        background: var(--navy-blue);
+        padding: 1rem;
+    }
+
+
+
+    .membersLevels button {
+        display: block;
+        margin: 0 auto;
+        height: 44px;
+        border: none;
+        border-radius: 6px;
+        padding: .5rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--gold-col);
+            border: solid 1px var(--white-col);
+            transition: all 0.4s ease-in-out;
+        }
+    }
+
+
+    .footer-info p,
+    .footer-info span {
+        text-align: left;
+        color: var(--white-col);
+    }
+
+    .footer-info section {
+        background: var(--navy-blue);
+        padding: 1rem;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .socials img {
+        width: 80px;
+    }
+
+    p,
+    span,
+    legend,
+    label,
+    input,
+    button {
+        font-family: var(--p-font);
+    }
+
+    footer section:nth-of-type(2) p {
+        text-align: center;
+    }
+
+    .navigation {
+        top: 0;
+        position: fixed;
+        z-index: 2;
+        width: 100vw;
+    }
+}

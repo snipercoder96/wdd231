@@ -1,0 +1,276 @@
+:root {
+    --navy-blue: #1A3D6D;
+    --gold-col: #FFD700;
+    --body-col: #f5f5f5;
+    --white-col: #fff;
+    --text-col: #333;
+    --header-font: 'Montserrat', sans-serif;
+    --p-font: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    *:not(.navigation){
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeStack 0.5s ease forwards;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes fadeStack {
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+
+    body {
+        background-color: var(--body-col);
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: var(--header-font);
+        color: var(--text-col);
+    }
+
+    p,
+    span,
+    legend,
+    label, 
+    input,
+    button {
+        font-family: var(--p-font);
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 24px auto 24px;
+        column-gap: .8rem;
+        padding: 10px 0 10px 16px;
+        background: var(--navy-blue);
+        color: var(--white-col);
+    }
+
+    header h1,
+    header h2,
+    header h3 {
+        color: var(--white-col);
+        
+    }
+
+    section {
+        color: var(--white-col);
+    }
+
+    section h1,
+    section h2,
+    section h3 {
+        color: var(--gold-col);
+    }
+
+    section p,
+    section span {
+        color: var(--white-col);
+    }
+
+    header img {
+        display: block;
+        width: 50px;
+        height: auto;
+    }
+
+    header span {
+        padding: 10px 0 10px 30px;
+        text-align: left;
+        color: var(--gold-col);
+    }
+
+    nav {
+        display: none;
+    }
+
+    #nav-toggle.show {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem;
+        background: var(--navy-blue);
+    }
+
+    #nav-toggle.show a {
+        color: var(--white-col);
+        text-decoration: none;
+        text-align: left;
+        padding: 1rem 0;
+    }
+
+    #nav-toggle.show a:visited {
+        color: var(--gold-col);
+    }
+
+    #nav-toggle.show a.current-page {
+        border-bottom: solid 1px var(--gold-col);
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+
+    #ham-btn {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: none;
+        color: var(--gold-col);
+        padding: 10px 10px 0 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+    }
+
+    main > h1{
+        padding-left: 1rem;
+    }
+
+    legend,
+    label {
+        color: var(--white-col);
+    }
+
+    legend {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    form {
+        padding: 1rem;
+        background: var(--navy-blue);
+        border-radius: 8px;
+    }
+
+    form input,
+    select{
+        display: block;
+        height: 44px;
+        margin: 0 0 20px;
+        border: none;
+        border-radius: 6px;
+        width: 100%;
+
+    }
+
+    input,
+    select, 
+    textarea{
+        color: var(--text-col);
+    }
+
+    textarea {
+        width: 100%;
+        height: 100px;
+        display: block;
+        margin: 0 0 20px;
+        border: none;
+        border-radius: 6px;
+
+    }
+
+    input[required]{
+        border-left: solid 5px red;
+    }
+
+    #organizationTitle,
+    textarea:nth-of-type(1){
+        border-left: solid 5px var(--text-col);
+    }
+
+    form button {
+        padding: .7rem;
+        border: none;
+        border-radius: 8px;
+        margin: 0 auto;
+        display: block;
+        background: var(--white-col);
+    }
+
+
+    /*----------- Javascript injection here ----------------*/
+
+    #membershipInfo {
+        padding: 1rem;
+        &::backdrop{
+            background: rgba(0, 0, 0, 0.4); 
+            backdrop-filter: blur(3px);
+        }
+    }
+
+
+    #membershipInfo button{
+        padding: .5rem;
+        width: 100px;
+        border-radius: 6px;
+        border: none;
+        background: var(--navy-blue);
+        color: var(--white-col);
+    }
+
+    .membersLevels{
+        background: var(--navy-blue);
+        padding: 1rem;
+        margin: 30px 0;
+    }
+
+
+    .membersLevels button {
+        display: block;
+        margin: 0 auto;
+        height: 44px;
+        border: none;
+        border-radius: 6px;
+        padding: .5rem;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .footer-info section {
+        background: var(--navy-blue);
+        padding: 1rem;
+    }
+
+    .footer-info p,
+    .footer-info span {
+        text-align: left;
+        color: var(--white-col);
+    }
+
+    .footer-info
+    {
+        margin: 30px 0;
+    }
+
+}
