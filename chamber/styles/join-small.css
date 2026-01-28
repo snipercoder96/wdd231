@@ -259,6 +259,10 @@
         color: var(--white-col);
     }
 
+    button{
+        background: var(--white-col);
+        color: var(--text-col);
+    }
 
     .membersLevels button {
         display: block;
