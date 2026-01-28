@@ -176,6 +176,8 @@
         color: var(--white-col);
     }
 
+
+
     select,  
     section,
     #membershipLevel{
@@ -254,6 +256,7 @@
         background: var(--navy-blue);
         padding: 1rem;
         margin: 30px 0;
+        color: var(--white-col);
     }
 
 
