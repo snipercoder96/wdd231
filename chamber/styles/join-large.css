@@ -195,7 +195,7 @@
         border-radius: 0 30%;
     }
 
-    .membersLevels h1,
+    .membersLevels h2,
     footer h3 {
         color: var(--gold-col);
     }
@@ -208,6 +208,10 @@
         background: var(--navy-blue);
         color: var(--white-col);
         cursor: pointer;
+    }
+
+    #membershipLevelTitles{
+        margin: auto 0;
     }
 
     #membershipInfo button:hover {
