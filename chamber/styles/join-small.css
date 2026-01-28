@@ -25,8 +25,8 @@
 
     @keyframes fadeStack {
         to {
-        opacity: 1;
-        transform: translateY(0);
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 
@@ -173,6 +173,17 @@
         background: var(--navy-blue);
         border-radius: 8px;
         max-width: 100%;
+        color: var(--white-col);
+    }
+
+    select,  
+    section,
+    #membershipLevel{
+        color: var(--white-col);
+    }
+
+    #membershipLevelTitles{
+        color: var(--text-col);
     }
 
     input,
