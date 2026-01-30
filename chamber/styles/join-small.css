@@ -179,8 +179,7 @@
 
 
     select,  
-    section,
-    #membershipLevel{
+    section{
         color: var(--white-col);
     }
 
