@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This join page contains information about the benefit of joining the chamber and a membership application form.">
+    <meta name="author" content="Kevin Mbemba Kiyindou">
+    <meta property="og:title" content="Kevin's Chamber of Commerce Page">
+    <meta property="og:description" content="A chamber of commerce join page about benefits of joining membership">
+    <meta property="og:image" content="https://snipercoder96.github.io/wdd231/chamber/images/hero-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://snipercoder96.github.io/chamber/index.html">
+    <meta property="og:locale" content="en_ZA">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./images/chamber-of-com.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/discover-small.css">
+    <link rel="stylesheet" href="./styles/discover-medium.css">
+    <link rel="stylesheet" href="./styles/discover-large.css">
+
+    <script type="module" src="./scripts/discover-main.mjs"></script>
+    <title>South Africa | Chamber Of Commerce | Discover</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="navigation">
+        <header>
+            <img src="./images/logo.jpg" alt="South Africa Chamber Of Commerce logo">
+            <span>South Africa Chamber Of Commerce</span>
+            <button id="ham-btn" aria-label="toggle navigation">☰</button>
+        </header>
+        <nav id="nav-toggle">
+            <a href="./index.html" >Home</a>
+            <a href="./directory.html">Directory</a>
+            <a href="./join.html">Join</a>
+            <a href="#" class="current-page" aria-current="page">Discover</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero-image">
+            <img src="./images/discover-hero.webp" alt="South Africa Chamber Of Commerce hero image">
+        </section>
+        <h1>Places Of interest</h1>
+        <div id="places-of-int">
+            <!-- Inject javascript here -->
+        </div>
+
+        <p id="lastVisit" style="text-align: center;">
+            <!-- Use localstorage to inject info here -->
+        </p>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <section>
+                <h3><strong>South Africa Chamber Of Commerce</strong></h3>
+                <p>
+                    South Africa Chamber Of Commerce<br>
+                    123 Business Street, Johannesburg, Gauteng, South Africa<br>
+                    Phone: +27 11 555 1234 | Email: info@sachamber.org
+                </p>
+            </section>
+
+            <div class="socials">
+                <a href="https://github.com/snipercoder96" aria-label="Kevins Github page">
+                    <img src="./images/github-brands-solid-full.svg" alt="Github icon" loading="lazy" width="50"
+                        height="50">
+                </a>
+                <a href="https://www.linkedin.com/in/summer-soldiertm-4a49502b6" aria-label="Kevins linkedin page">
+                    <img src="./images/linkedin-brands-solid-full.svg" alt="LinkedIn icon" loading="lazy" width="50"
+                        height="50">
+                </a>
+                <a href="https://www.facebook.com/kevin.mbemba.208794" aria-label="Kevins facebook">
+                    <img src="./images/facebook-brands-solid-full.svg" alt="Facebook icon" loading="lazy" width="50"
+                        height="50">
+                </a>
+            </div>
+
+            <section>
+                <p>&copy; | <span id="current-year"></span> | South Africa Chamber Of Commerce |
+                    Last Modified: <span id="lastModified"></span></p>
+            </section>
+        </div>
+    </footer>
+    
+</body>
+</html>

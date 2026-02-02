@@ -82,5 +82,17 @@
         "membershipLevel": "Silver",
         "description": "Travel agency offering tours, holiday packages, and corporate travel solutions.",
         "tagline": "Your journey starts here"
+    },
+    {
+        "name": "Heritage Art Gallery",
+        "address": "34 Culture Square, Germiston, Gauteng",
+        "phone": "+27 11 555 6420",
+        "website": "https://heritagegallery.co.za",
+        "email": "info@heritagegallery.co.za",
+        "image": "./images/heritage-art-gal.webp",
+        "membership": 3,
+        "membershipLevel": "Gold",
+        "description": "Gallery showcasing local artists, cultural exhibitions, and creative workshops.",
+        "tagline": "Celebrating creativity and heritage"
     }
 ]

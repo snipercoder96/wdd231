@@ -1,0 +1,177 @@
+:root {
+    --navy-blue: #1A3D6D;
+    --gold-col: #FFD700;
+    --body-col: #f5f5f5;
+    --white-col: #fff;
+    --text-col: #333;
+    --header-font: 'Montserrat', sans-serif;
+    --p-font: 'Open Sans', sans-serif;
+}
+
+
+@media screen and (max-width: 640px){
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    body {
+            background-color: var(--body-col);
+        }
+
+    main {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    h1,
+    h2,
+    h3 {
+        font-family: var(--header-font);
+        color: var(--text-col);
+    }
+
+    p, span, address{
+        font-family: var(--p-font);
+    }
+    header {
+            display: grid;
+            grid-template-columns: 24px auto 24px;
+            column-gap: .8rem;
+            padding: 10px 0 10px 16px;
+            background: var(--navy-blue);
+            color: var(--white-col);
+        }
+    header img {
+            display: block;
+            width: 50px;
+            height: auto;
+        }
+    header span {
+            padding: 10px 0 10px 30px;
+            text-align: left;
+            color: var(--gold-col);
+        }
+    nav {
+            display: none;
+        }
+
+    #nav-toggle.show {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem;
+        background: var(--navy-blue);
+    }
+
+    #nav-toggle.show a {
+        color: var(--white-col);
+        text-decoration: none;
+        text-align: left;
+        padding: 1rem 0;
+    }
+    #nav-toggle.show a:visited {
+            color: var(--gold-col);
+        }
+
+    #nav-toggle.show a.current-page {
+        border-bottom: solid 1px var(--gold-col);
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+
+    #ham-btn {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border: none;
+            background: none;
+            color: var(--gold-col);
+            padding: 10px 10px 0 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+        }
+
+    .hero-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+        overflow-x: hidden;
+    }
+
+    main > h1{
+        padding-left: 1rem;
+    }
+
+    .interest-cards{
+        display: grid;
+        margin: 20px;
+        padding: 1rem;
+        grid-template-areas: 
+        "title"
+        "image"
+        "address"
+        "description";
+        background-color: var(--white-col);
+        border: solid 1px var(--navy-blue);
+        border-radius: 6px;
+    }
+
+    .interest-cards p,
+    .interest-cards address{
+        padding-left: 1rem;
+    }
+
+    .interest-cards h2{
+        grid-area: title;
+    }
+    
+    .interest-cards img{
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        padding: 1rem;
+        grid-area: image;
+    }
+
+    .interest-cards address{
+        grid-area: address;
+    }
+
+    .interest-cards p {
+        grid-area: description;
+    }
+
+    
+    .socials {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .footer-info section {
+        background: var(--navy-blue);
+        padding: 1rem;
+    }
+
+    .footer-info p,
+    .footer-info span {
+        text-align: left;
+        color: var(--white-col);
+    }
+
+    .footer-info h3{
+        color: var(--gold-col);
+    }
+
+    .footer-info
+    {
+        margin: 30px 0;
+    }
+}

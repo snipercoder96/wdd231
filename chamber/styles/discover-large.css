@@ -1,0 +1,165 @@
+@media screen and (min-width: 1025px) {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    body {
+            background-color: var(--body-col);
+        }
+
+    main {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    h1,
+    h2,
+    h3 {
+        font-family: var(--header-font);
+        color: var(--text-col);
+    }
+
+    p, span, address{
+        font-family: var(--p-font);
+    }
+    header {
+        display: grid;
+        grid-template-columns: 24px auto 24px;
+        column-gap: .8rem;
+        padding: 10px 0 10px 16px;
+        background: var(--navy-blue);
+        color: var(--white-col);
+    }
+
+    header img {
+        width: 50px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    header span {
+        margin-left: 40px;
+        padding: 10px 0;
+        font-size: larger;
+        color: var(--gold-col);
+    }
+
+    nav a {
+        font-family: var(--p-font);
+    }
+
+    body {
+        background: var(--body-col);
+    }
+
+    #ham-btn {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 0 20px 10px;
+        border-bottom: solid 1px var(--navy-blue);
+        background: var(--white-col);
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--text-col);
+        font-size: 1.3rem;
+    }
+
+    nav a:hover {
+        color: var(--gold-col);
+        text-decoration: underline;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #nav-toggle .current-page {
+        border-bottom: solid 1px var(--navy-blue);
+        border-width: 4px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        min-width: 768px;
+    }
+
+    main > h1{
+        padding-left: 1rem;
+    }
+
+    #places-of-int{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .interest-cards{
+        display: grid;
+        margin: 20px;
+        padding: 1rem;
+        grid-template-areas: 
+        "image title"
+        "image address"
+        "image description";
+        background-color: var(--white-col);
+        border: solid 1px var(--navy-blue);
+        border-radius: 6px;
+    }
+
+    .interest-cards p,
+    .interest-cards address{
+        padding-left: 1rem;
+    }
+
+    .interest-cards h2{
+        grid-area: title;
+        padding-left: 1rem;
+    }
+    
+    .interest-cards img{
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        padding: 1rem;
+        grid-area: image;
+    }
+
+    .interest-cards address{
+        grid-area: address;
+    }
+
+    .interest-cards p {
+        grid-area: description;
+    }
+
+    
+    .socials {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .footer-info section {
+        background: var(--navy-blue);
+        padding: 1rem;
+    }
+
+    .footer-info p,
+    .footer-info span {
+        text-align: left;
+        color: var(--white-col);
+    }
+
+    .footer-info h3{
+        color: var(--gold-col);
+    }
+
+    .footer-info
+    {
+        margin: 30px 0;
+    }
+}

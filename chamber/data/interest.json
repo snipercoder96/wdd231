@@ -1,0 +1,52 @@
+{
+  "placesOfInterest": [
+    {
+      "title": "<h2>Brakpan Civic Centre</h2>",
+      "image": "<img class='image-area' src='./images/civic-centre.webp' alt='Brakpan Civic Centre' width='300' height='200'>",
+      "address": "<address>1 High Street, Brakpan, Gauteng</address>",
+      "description": "<p>A central venue for community events, exhibitions, and municipal gatherings in Brakpan.</p>"
+    },
+    {
+      "title": "<h2>Carnival City Casino & Entertainment World</h2>",
+      "image": "<img class='image-area' src='./images/carnival-city.webp' alt='Carnival City Casino' width='300' height='200'>",
+      "address": "<address>Corner Century & Elsburg Road, Brakpan, Gauteng</address>",
+      "description": "<p>A vibrant entertainment complex offering gaming, live shows, restaurants, and family fun.</p>"
+    },
+    {
+      "title": "<h2>Dalpark Bird Sanctuary</h2>",
+      "image": "<img class='image-area' src='./images/dalpark-birds.webp' alt='Dalpark Bird Sanctuary' width='300' height='200'>",
+      "address": "<address>Dalpark Extension 1, Brakpan, Gauteng</address>",
+      "description": "<p>A peaceful nature reserve ideal for birdwatching, photography, and quiet walks.</p>"
+    },
+    {
+      "title": "<h2>Brakpan History Museum</h2>",
+      "image": "<img class='image-area' src='./images/history-museum.webp' alt='Brakpan History Museum' width='300' height='200'>",
+      "address": "<address>14 Main Street, Brakpan, Gauteng</address>",
+      "description": "<p>Preserving the rich heritage of Brakpan through exhibits, archives, and guided tours.</p>"
+    },
+    {
+      "title": "<h2>Far East Rand Hospital Garden</h2>",
+      "image": "<img class='image-area' src='./images/hospital-garden.webp' alt='Far East Rand Hospital Garden' width='300' height='200'>",
+      "address": "<address>Hospital Road, Brakpan, Gauteng</address>",
+      "description": "<p>A tranquil green space adjacent to the hospital, open to visitors and staff for relaxation.</p>"
+    },
+    {
+      "title": "<h2>Brakpan Indoor Sports Arena</h2>",
+      "image": "<img class='image-area' src='./images/sports-arena.webp' alt='Brakpan Indoor Sports Arena' width='300' height='200'>",
+      "address": "<address>5 Stadium Avenue, Brakpan, Gauteng</address>",
+      "description": "<p>Multi-purpose indoor venue hosting local sports, fitness events, and community competitions.</p>"
+    },
+    {
+      "title": "<h2>Sherwood Gardens Park</h2>",
+      "image": "<img class='image-area' src='./images/sherwood-park.webp' alt='Sherwood Gardens Park' width='300' height='200'>",
+      "address": "<address>Sherwood Gardens, Brakpan, Gauteng</address>",
+      "description": "<p>A family-friendly park with playgrounds, picnic areas, and walking paths surrounded by greenery.</p>"
+    },
+    {
+      "title": "<h2>Brakpan Art Walk</h2>",
+      "image": "<img class='image-area' src='./images/art-walk.webp' alt='Brakpan Art Walk' width='300' height='200'>",
+      "address": "<address>Culture Lane, Brakpan CBD, Gauteng</address>",
+      "description": "<p>An open-air gallery showcasing local artists, murals, and sculptures along a pedestrian route.</p>"
+    }
+  ]
+}
