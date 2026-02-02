@@ -154,12 +154,17 @@
         color: var(--white-col);
     }
 
-    .footer-info h3{
+    .footer-info h2{
         color: var(--gold-col);
     }
 
     .footer-info
     {
         margin: 30px 0;
+    }
+
+    #lastVisit{
+        text-align: center;
+        font-size: 1rem;
     }
 }
