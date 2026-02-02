@@ -15,6 +15,8 @@
 
 ## community.html  (Community & Stats Page)
 
+- Use dialog (modals) for the form
+
 - Leaderboards or recent games via Chess.com  API.
 
 - This is where your form goes.
@@ -74,7 +76,7 @@
 
 `NB` bUT have them in a modal (dialog), so that the user can interact with these elements.
 
-## Opennings
+## Openings
 
 - Must consist of openings like: Ruy lopez(Spanish game), Italian Game, French Defense, Queens Gambit, Scicillian defense
 - Give the history of each openning, what it does, and the movement notation eg. Nc5 etc ( If possible include a live game on that)
@@ -172,3 +174,31 @@ loadPuzzle();
 - Get the Url (using js) inject the users form data in there
 
 
+
+--------------------------------------------------------------------------------------------------------------------------------
+# Color schemes
+
+``` css
+:root { 
+  --chess-black: #000000; /*bg-col: default */
+  --chess-dark-gray: #2c2c2c; /* Modal: background color */
+  --chess-white: #ffffff; /*Links : default, text-col: P, and h1,h2,h3...*/
+  --chess-gold: #d4af37; /* background-color: default, hover effects: button, nav*/
+  --chess-green: #228B22; /*background-color: deault gradient, */
+  --chess-light-gray: #f5f5f5; /*bg-color: sections, secondary text */ 
+}
+
+/* 
+- Use a background from black to gray
+*/
+.hero { 
+  background: linear-gradient(to right, #000000, #2c2c2c); 
+  background-image: url('your-image-path.png'); 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: contain; 
+  padding: 4rem 2rem; 
+  color: var(--chess-gold); 
+  text-align: center; 
+}
+```
