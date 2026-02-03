@@ -45,17 +45,19 @@
 </head>
 
 <body>
-    <header>
-        <img src="./images/chess-favicon.svg" alt="A logo" width="50" height="50">
-        <h1 class="logo">PawnSchool</h1>
-        <nav id="nav-toggle">
-            <a href="#" aria-current="page">Home</a>
-            <a href="./learn.html">Learn</a>
-            <a href="./community.html">Community</a>
-        </nav>
-        <button id="toggle-button" aria-label="navigation">&#9776;</button>
-    </header>
-
+    <div class="persistent-nav">
+        <header>
+            <img src="./images/chess-favicon.svg" alt="A logo" width="50" height="50">
+            <h1 class="logo">PawnSchool</h1>
+            <nav id="nav-toggle">
+                <a href="#" aria-current="page" class="current">Home</a>
+                <a href="./learn.html">Learn</a>
+                <a href="./community.html">Community</a>
+            </nav>
+            <button id="toggle-button" aria-label="navigation">&#9776;</button>
+        </header>
+    </div>
+        
     <section class="hero">
         <img src="./images/hero-image.gif" alt="A hero image" width="600" height="600">
 
@@ -71,7 +73,7 @@
         <section class="cards">
             <article>
                 <h2>♟ Learn the Rules</h2>
-                <p>Step-by-step guides for beginners and advanced players.</p>
+                <p>Step-by-step guides for beginners, intermediate and advanced players.</p>
             </article>
             <article>
                 <h2>🧩 Daily Puzzle</h2>
@@ -85,9 +87,19 @@
     </main>
 
     <footer>
-
-        <div>
-
+        <h3>Connect with us</h3>
+        <div class="socials">
+            <a href="https://www.facebook.com/kevin.mbemba.208794" target="_blank">
+                <img src="./images/facebook-brands-solid-full.svg" alt="Facebook icon" width="60" height="60">
+            </a>
+            
+            <a href="https://github.com/snipercoder96" target="_blank">
+                <img src="./images/github-brands-solid-full.svg" alt="GitHub icon" width="60" height="60">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/summer-soldiertm-4a49502b6" target="_blank" >
+                <img src="./images/linkedin-brands-solid-full.svg" alt="LinkedIn icon" width="60" height="60">
+            </a>
         </div>
         <p>&copy; 
             <span id="year"></span> | PawnSchool. All rights reserved. | Last Modified : <span id="lastModified"></span>

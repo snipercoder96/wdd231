@@ -1,0 +1,209 @@
+@media screen and (min-width:1025px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url("../images/chess-background.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: var(--heading-font);
+    }
+
+    p,
+    span,
+    a {
+        font-family: var(--body-font);
+    }
+
+    header {
+        background: linear-gradient(to right, var(--chess-black-trans), var(--chess-dark-gray-trans));
+        grid-template-columns: 28px auto;
+        padding: 1rem;
+        column-gap: 1.5rem;
+        background-size: cover;
+        width: 100%;
+    }
+
+    header img {
+        object-fit: cover;
+        overflow: hidden;
+        margin-top: 1rem;
+    }
+
+    header > h1 {
+        display: inline;
+        margin: 0 0 1rem 1rem;
+        color: var(--chess-white);
+    }
+
+    #toggle-button{
+        display: none;
+    }
+
+    #nav-toggle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 1rem;
+        border-top: solid 1px var(--chess-white);
+    }
+
+    #nav-toggle a{
+        color: var(--chess-white);
+        text-decoration: none;
+    }
+
+    #nav-toggle .current{
+        border-bottom: solid 1px var(--chess-green);
+        border-bottom-width: 3px;
+    }
+
+    #nav-toggle .current:hover{
+        text-decoration: none;
+        border-bottom: solid 1px var(--chess-gold);
+        border-bottom-width: 3px;
+    }
+
+    #nav-toggle a:hover{
+        text-decoration: underline;
+        color: var(--chess-gold);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .hero {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin: .1rem auto;
+        padding: 0;
+    }
+
+    .persistent-nav {
+        top: 0;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+    }
+    
+
+    .hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .insert-into-hero {
+        position: absolute;
+        background-color: var(--chess-dark-gray-trans);
+        bottom: 12%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .insert-into-hero h1 {
+        color: var(--chess-light-green);
+        font-size: 2.4rem;
+        margin: 0;
+        padding: 1rem;
+        font-weight: 800;
+    }
+
+    .insert-into-hero p,
+    .insert-into-hero a {
+        color: var(--chess-white);
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 1rem 1rem 2.5rem;
+    }
+
+    .insert-into-hero a {
+        background-color: var(--chess-green);
+        padding: 1rem;
+        text-decoration: none;
+        border: solid 1px var(--chess-white);
+        border-radius: 6px;
+        color: var(--chess-white);
+    }
+
+    .insert-into-hero a:hover{
+        background-color: var(--chess-gold);
+        transition: all 0.3s ease-in-out;
+    }
+
+    main>h1 {
+        color: var(--chess-light-green);
+        padding-left: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .cards {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .cards article{
+        background: var(--chess-dark-gray-trans);
+        padding: 1rem;
+        border-radius: 8px;
+        border: solid 1px var(--chess-white-trans);
+    }
+
+    .cards article h2 {
+        color: var(--chess-light-green);
+        font-size: 2rem;
+    }
+
+    .cards article p {
+        color: var(--chess-white);
+        font-size: 1.3rem;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    footer {
+        background: linear-gradient(to right, var(--chess-black-trans), var(--chess-dark-gray-trans));
+        padding: 1rem;
+    }
+
+    footer h3 {
+        text-align: center;
+        color: var(--chess-light-green);
+    }
+
+    footer img:hover{
+        background-color: var(--chess-gold);
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    footer p,
+    footer span {
+        color: var(--chess-white);
+        text-align: center;
+    }
+}
