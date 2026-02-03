@@ -179,13 +179,23 @@ loadPuzzle();
 # Color schemes
 
 ``` css
-:root { 
-  --chess-black: #000000; /*bg-col: default */
-  --chess-dark-gray: #2c2c2c; /* Modal: background color */
-  --chess-white: #ffffff; /*Links : default, text-col: P, and h1,h2,h3...*/
-  --chess-gold: #d4af37; /* background-color: default, hover effects: button, nav*/
-  --chess-green: #228B22; /*background-color: deault gradient, */
-  --chess-light-gray: #f5f5f5; /*bg-color: sections, secondary text */ 
+:root {
+    --chess-black: #000000;
+
+    --chess-background: #0000007b; /*bg-col: default */
+   
+    --chess-dark-gray: #2c2c2c; /* Modal: background color */
+    
+    --chess-white: #ffffff; /*Links : default, text-col: P, and h1,h2,h3...*/
+   
+    --chess-gold: #d4af37;/* background-color: default, hover effects: button, nav*/
+    
+    --chess-green: #228B22;/*heading */
+    
+    --chess-light-gray: #f5f5f5;/*bg-color: sections, secondary text */
+
+    --heading-font: 'Merriweather', serif;
+    --body-font: 'Roboto', sans-serif;
 }
 
 /* 
