@@ -32,35 +32,59 @@
 
     *,
     *::before,
-    *::after{
+    *::after {
         box-sizing: border-box;
     }
 
-    html{
+    html {
         margin: 0;
         padding: 0;
     }
 
     h1,
     h2,
-    h3{
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: var(--heading-font);
+        color: var(--chess-light-green);
+        padding-left: 1rem;
     }
 
     p,
     span,
-    a{
+    a,
+    button,
+    ul,
+    ol {
         font-family: var(--body-font);
+        color: var(--chess-white);
     }
 
+    p,
+    a {
+        padding-left: 1rem;
+    }
 
-    body{
+    button {
+        margin-left: 1rem;
+    }
+
+    body {
         background: url("../images/chess-background.webp");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0;
         padding: 0;
+        width: 100%;
+    }
+
+    .persistent-nav {
+        top: 0;
+        position: fixed;
+        z-index: 2;
         width: 100%;
     }
 
@@ -75,12 +99,7 @@
         position: relative;
     }
 
-    .persistent-nav{
-        top: 0;
-        position: fixed;
-        z-index: 2;
-        width: 100%;
-    }
+
 
     header img {
         width: 100%;
@@ -88,7 +107,7 @@
         overflow: hidden;
     }
 
-    header h1{
+    header h1 {
         display: inline;
         margin: .5rem 0 0 2rem;
         color: var(--chess-white);
@@ -106,19 +125,19 @@
         width: 100%;
     }
 
-    #nav-toggle.show{
+    #nav-toggle.show {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 1rem;
     }
 
-    #nav-toggle .current{
+    #nav-toggle .current {
         border-bottom: none;
         background: var(--chess-green);
     }
 
-    #nav-toggle.show a{
+    #nav-toggle.show a {
         color: var(--chess-white);
         text-decoration: none;
         border-bottom: solid 1px var(--chess-white);
@@ -176,7 +195,7 @@
         }
     }
 
-    #toggle-button{
+    #toggle-button {
         display: block;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         border: none;
@@ -190,100 +209,116 @@
         color: var(--chess-white);
     }
 
-    .hero{
-        display: block;
+    .hero-image img {
         width: 100%;
-        position:  relative;
-        margin: 0 auto;
-        padding: 0;
     }
 
-    .hero img {
+    #display-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #display-grid section {
+        background-color: var(--chess-dark-gray-trans);
+        margin: 30px;
+        padding: 1rem;
+        border: solid 1px var(--chess-white-trans);
+        border-radius: 12px;
+    }
+
+    #display-grid section img {
         display: block;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
         margin: 0 auto;
         object-fit: contain;
+        overflow: hidden;
     }
 
-    .insert-into-hero{
-        position: absolute;
-        background-color: var(--chess-dark-gray-trans);
-        bottom: 22%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        padding: 1rem;
-        width: 100%;
-        text-align: center;
-    }
-
-    .insert-into-hero h1{
-        color: var(--chess-light-green);
-        font-size: 2.4rem;
-        margin: 0;
-        padding: 1rem;
-        font-weight: 800;
-    }
-    .insert-into-hero p,
-    .insert-into-hero a{
-        color: var(--chess-white);
-        font-size: 1.2rem;
-        margin: 0;
-        padding: 1rem 1rem 2.5rem;
-    }
-
-    .insert-into-hero a{
+    #display-grid section button {
+        display: block;
+        padding: .8rem;
+        margin: 0 auto;
         background-color: var(--chess-green);
-        padding: 1rem;
-        text-decoration: none;
+        border-radius: 8px;
+        width: 200px;
+        border: none;
+    }
+
+    #display-grid dialog {
+        margin: auto;
+        background-color: var(--chess-dark-gray);
+        max-width: 500px;
+        width: 100%;
+        height: 600px;
         border: solid 1px var(--chess-white);
-        border-radius: 6px;
-        color: var(--chess-white);
-    }
-
-    main > h1{
-        color: var(--chess-light-green);
-        padding-left: 1rem;
-        font-size: 2.5rem;
-    }
-
-    .cards{
         padding: 1rem;
+        border-radius: 8px;
     }
 
-    .cards article h2{
-        color: var(--chess-light-green);
-        font-size: 2rem;
+    #display-grid dialog button {
+        background-color: var(--chess-green);
+        padding: .8rem;
+        margin: 20px 1rem;
+        width: 100px;
+        border-radius: 8px;
+        border: none;
     }
 
-    .cards article p{
-        color: var(--chess-white);
-        font-size: 1.3rem;
+    #display-grid dialog iframe {
+        width: 100%;
+        margin: 0 auto;
+        border: solid 1px var(--chess-white-trans);
+        border-radius: 8px;
     }
 
-    .socials{
+    #display-grid dialog img {
+        object-fit: contain;
+        overflow: hidden;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #display-grid dialog div {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    #display-grid dialog::backdrop {
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+    }
+
+    button {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    button:active {
+        transform: scale(1.05);
+    }
+
+    .socials {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
 
-    footer{
+    footer {
         background: linear-gradient(to right, var(--chess-black-trans), var(--chess-dark-gray-trans));
         padding: 1rem;
     }
 
-    footer h3{
+    footer h3 {
         text-align: center;
         color: var(--chess-light-green);
     }
 
 
     footer p,
-    footer span{
+    footer span {
         color: var(--chess-white);
     }
-
-    
 }

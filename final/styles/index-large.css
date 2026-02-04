@@ -1,4 +1,4 @@
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1001px) {
 
     *,
     *::before,
@@ -28,7 +28,7 @@
     }
 
     header {
-        background: linear-gradient(to right, var(--chess-black-trans), var(--chess-dark-gray-trans));
+        background: transparent;
         grid-template-columns: 28px auto;
         padding: 1rem;
         column-gap: 1.5rem;
@@ -42,17 +42,17 @@
         margin-top: 1rem;
     }
 
-    header > h1 {
+    header>h1 {
         display: inline;
         margin: 0 0 1rem 1rem;
         color: var(--chess-white);
     }
 
-    #toggle-button{
+    #toggle-button {
         display: none;
     }
 
-    #nav-toggle{
+    #nav-toggle {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -60,23 +60,23 @@
         border-top: solid 1px var(--chess-white);
     }
 
-    #nav-toggle a{
+    #nav-toggle a {
         color: var(--chess-white);
         text-decoration: none;
     }
 
-    #nav-toggle .current{
+    #nav-toggle .current {
         border-bottom: solid 1px var(--chess-green);
         border-bottom-width: 3px;
     }
 
-    #nav-toggle .current:hover{
+    #nav-toggle .current:hover {
         text-decoration: none;
         border-bottom: solid 1px var(--chess-gold);
         border-bottom-width: 3px;
     }
 
-    #nav-toggle a:hover{
+    #nav-toggle a:hover {
         text-decoration: underline;
         color: var(--chess-gold);
         transition: all 0.5s ease-in-out;
@@ -96,7 +96,7 @@
         z-index: 2;
         width: 100%;
     }
-    
+
 
     .hero img {
         display: block;
@@ -142,7 +142,7 @@
         color: var(--chess-white);
     }
 
-    .insert-into-hero a:hover{
+    .insert-into-hero a:hover {
         background-color: var(--chess-gold);
         transition: all 0.3s ease-in-out;
     }
@@ -160,7 +160,7 @@
         grid-gap: 1rem;
     }
 
-    .cards article{
+    .cards article {
         background: var(--chess-dark-gray-trans);
         padding: 1rem;
         border-radius: 8px;
@@ -194,7 +194,7 @@
         color: var(--chess-light-green);
     }
 
-    footer img:hover{
+    footer img:hover {
         background-color: var(--chess-gold);
         border-radius: 50%;
         transition: all 0.3s ease-in-out;

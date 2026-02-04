@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta property -->
+    <meta name="description" content="A Learning page where we teach how to move pieces and more.">
+    <meta name="author" content="Kevin Mbemba Kiyindou">
+    <meta property="og:title" content="Kevin's chess website">
+    <meta property="og:description" content="A Learning page where we teach how to move pieces and more.">
+    <meta property="og:image" content="https://snipercoder96.github.io/wdd231/final/images/hero-image.gif">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://snipercoder96.github.io/final/index.html">
+    <meta property="og:locale" content="en_ZA">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/chess-favicon.svg" type="image/x-icon">
+
+
+    <!-- Styles.css -->
+    <link rel="stylesheet" href="./styles/learn-small.css">
+    <link rel="stylesheet" href="./styles/learn-large.css">
+
+    <!-- Javascript -->
+    <script type="module" src="./scripts/index-main.mjs"></script>
+
+    <title>PawnSchool | Learn</title>
+</head>
+
+<body>
+    <div class="persistent-nav">
+        <header>
+            <img src="./images/chess-favicon.svg" alt="A logo" width="50" height="50">
+            <h1 class="logo">PawnSchool</h1>
+            <nav id="nav-toggle">
+                <a href="./index.html" >Home</a>
+                <a href="#" aria-current="page" class="current">Learn</a>
+                <a href="./community.html">Community</a>
+            </nav>
+            <button id="toggle-button" aria-label="navigation">&#9776;</button>
+        </header>
+    </div>
+
+    <section class="hero-image">
+        <img src="./images/learn-hero.webp" alt="A hero image" width="600" height="600">
+    </section>
+    <main>
+        <section id="intro">
+            <h1>Welcome to the Learning Hub</h1>
+            <p>Here you'll find lessons, diagrams, and tips to improve your chess skills from pawn to master.</p>
+        </section>
+        <section id="topics">
+            <h2>Topics Covered</h2>
+            <ul>
+                <li>Basic Rules & Movement</li>
+                <li>Opening Principles</li>
+                <li>Tactics & Strategy</li>
+                <li>Endgame Fundamentals</li>
+            </ul>
+        </section>
+
+        <div id="display-grid">
+            <section id="basic-movements">
+                <img src="./images/basic-movements.svg" alt="A basic movement emblem" width="200" height="200">
+                <p>Learn how each chess piece moves — from pawns to kings — and understand the foundation of gameplay.
+                </p>
+                <button id="basic-movements-button">Learn more</button>
+            </section>
+
+            <!-- Modal for Basic Movements (pawns) -->
+            <dialog id="modal1">
+                <article>
+                    <div>
+                        <h2>Basic Movements</h2>
+                        <button id="close-modal1">Close</button>
+                    </div>
+                    <h3>♟️ Pawns</h3>
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/00uUlbcPz5E?si=vH5RTdFGBTMhppqf"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+                    <ul>
+                        <li>Pawns move forward one square, with the option to move two squares on their first move.</li>
+                        <li>They capture diagonally.</li>
+                        <li>Pawns are worth 1 point of material until they cross over the enemy base.</li>
+                    </ul>
+                    <button id="next1">Next</button>
+                </article>
+            </dialog>
+
+            <!-- Modal for Rooks (next step) -->
+            <dialog id="modal2">
+                <article>
+                    <div>
+                        <h3>♖ Rooks</h3> <button id="close-modal2">Close</button>
+                    </div> <iframe width="500" height="300"
+                        src="https://www.youtube.com/embed/PlgnoYqsK-8?si=KunQy9sl4PSB1TRH" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+                    <ul>
+                        <li>Rooks move horizontally or vertically across any number of squares.</li>
+                        <li>Rooks cannot move when blocked by other pieces whether horizontally or vertically.</li>
+                        <li>They are worth 5 points of material.</li>
+                    </ul>
+                    <button id="next2">Next</button>
+                </article>
+            </dialog>
+
+            <!-- Modal: Knights -->
+            <dialog id="modal3">
+                <article>
+                    <div>
+                        <h3>♘ Knights</h3> <button id="close-modal3">Close</button>
+                    </div>
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/VGoT8FR0O_8?si=nmjynQouWSnYONau"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <ul>
+                        <li>Knights move in an L-shape: two squares in one direction, then one square perpendicular.
+                        </li>
+                        <li>They are the only pieces that can jump over others.</li>
+                        <li>Knights are worth 3 points of material.</li>
+                    </ul> <button id="next3">Next</button>
+                </article>
+            </dialog>
+
+            <!-- Modal: Bishops -->
+            <dialog id="modal4">
+                <article>
+                    <div>
+                        <h3>♗ Bishops</h3> <button id="close-modal4">Close</button>
+                    </div>
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/_y3eA21rD1w?si=pAYMYI5-n5CiBSKh"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <ul>
+                        <li>Bishops move diagonally across any number of squares.</li>
+                        <li>Each bishop stays on its starting color (light or dark squares).</li>
+                        <li>Bishops are worth 3 points of material.</li>
+                    </ul> <button id="next4">Next</button>
+                </article>
+            </dialog>
+
+            <!-- Modal: Queens -->
+            <dialog id="modal5">
+                <article>
+                    <div>
+                        <h3>♕ Queens</h3> <button id="close-modal5">Close</button>
+                    </div>
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/vwgwI0wnULU?si=JlGQDOWl7AQnLwh2"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <ul>
+                        <li>The queen combines the power of the rook and bishop.</li>
+                        <li>She can move horizontally, vertically, or diagonally across any number of squares.</li>
+                        <li>The queen is the most powerful piece, worth 9 points of material.</li>
+                    </ul> <button id="next5">Next</button>
+                </article>
+            </dialog>
+
+            <!-- Modal: Kings -->
+            <dialog id="modal6">
+                <article>
+                    <div>
+                        <h3>♔ Kings</h3> <button id="close-modal6">Close</button>
+                    </div> <iframe width="500" height="300"
+                        src="https://www.youtube.com/embed/ZWjDKiHBvZo?si=P_PlyDGQsl8SNslq" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <ul>
+                        <li>The king moves one square in any direction.</li>
+                        <li>Protecting the king is the ultimate goal of the game.</li>
+                        <li>The king is invaluable — if checkmated, the game ends.</li>
+                    </ul> <button id="finish">Finish</button>
+                </article>
+            </dialog>
+
+
+
+            <!-- Lesson: Openning principles -->
+            <section id="opening-principles">
+                <img src="./images/opening-principles.svg" alt="A opening principles emblem" width="200" height="200">
+                <p>Explore unique chess mechanics like castling, en passant, and pawn promotion that add depth to the
+                    game.</p>
+                <button id="opening-principles-button">Learn more</button>
+            </section>
+
+            <dialog id="openingDialog1">
+
+                <div>
+                    <h2>📖Opening Principles</h2>
+                    <button id="close-opening1">close</button>
+                </div>
+
+                <ol>
+                    <li>Control the Center</li>
+                    <ul>
+                        <li>Key squares: e4, d4, e5, d5.</li>
+                        <li>Use pawns (e.g., 1.e4 or 1.d4) and minor pieces (knights, bishops) to claim influence.</li>
+                        <li>Controlling the center gives your pieces more mobility and restricts your opponent.</li>
+                    </ul>
+
+                    <li>Develop Your Pieces Quickly</li>
+                    <ul>
+                        <li>Bring knights and bishops into play early.</li>
+                        <li>Avoid moving the same piece multiple times unless necessary.</li>
+                        <li>Knights are often developed before bishops.</li>
+                    </ul>
+
+                    <li>Castle Early</li>
+                    <ul>
+                        <li>Castling protects your king and connects your rooks.</li>
+                        <li>Aim to castle within the first 5–10 moves.</li>
+                    </ul>
+
+                    <li>Don’t Move the Queen Too Soon</li>
+                    <ul>
+                        <li>The queen is powerful but vulnerable if developed too early.</li>
+                        <li>Wait until your minor pieces are developed before bringing her out.</li>
+                    </ul>
+
+                    <li>Connect Your Rooks</li>
+                    <ul>
+                        <li>Clear the back rank by developing minor pieces.</li>
+                        <li>Rooks are strongest when they support each other and control open files.</li>
+                    </ul>
+
+                    <li>Avoid Unnecessary Pawn Moves</li>
+                    <ul>
+                        <li>Don’t push too many pawns early; they can become weaknesses.</li>
+                        <li>Each pawn move should support piece development or central control.</li>
+                    </ul>
+
+                    <li>Develop Towards the Center</li>
+                    <ul>
+                        <li>Place knights on c3/f3 (or c6/f6 for Black) rather than the edge.</li>
+                        <li>“Knights on the rim are dim” — they control fewer squares.</li>
+                    </ul>
+
+                    <li>Coordinate Your Pieces</li>
+                    <ul>
+                        <li>Aim for harmony: pieces should support each other and work toward common goals.</li>
+                        <li>Avoid scattering them without a plan.</li>
+                    </ul>
+                </ol>
+
+                <p><strong>Video explanation:</strong></p>
+                <iframe width="500" height="300"
+                    src="https://www.youtube.com/embed/videoseries?si=t0OmwAJpZHmU5kXI&amp;list=PLXERcO0q03Qk7RZ5Jx65dWuNtrYdHldDv"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button id="nextopening1">Next</button>
+            </dialog>
+
+
+            <!-- Ruy Lopez (Spanish Game) -->
+            <dialog id="openingDialog2">
+                <div>
+                    <h2>Ruy Lopez (Spanish Game)</h2>
+                    <button id="close-opening2">Close</button>
+                </div>
+                <img src="./images/ruy-lopez.gif" alt="a ruy lopez opening demonstration" width="300" height="300">
+                <p><strong>History:</strong> Named after 16th‑century Spanish priest Ruy López de Segura, one of the
+                    earliest chess
+                    theoreticians. It has been a cornerstone of opening theory for centuries.</p>
+                <p><strong>Idea:</strong> White pressures Black’s knight on c6 after developing the bishop to b5, aiming
+                    to control
+                    the center and prepare for kingside castling.</p>
+                <p><strong>Notation:</strong> 1. e4 e5 2. Nf3 Nc6 3. Bb5</p>
+                <button id="nextopening2">Next</button>
+            </dialog>
+
+            <!-- Italian Game -->
+            <dialog id="openingDialog3">
+                <div>
+                    <h2>Italian Game</h2>
+                    <button id="close-opening3">Close</button>
+                </div>
+                <img src="./images/italian-opening.gif" alt="A italian opening demonstration" width="300" height="300">
+                <p><strong>History:</strong> Originating in the 16th century, popularized by Italian masters like Greco.
+                    It remains
+                    one of the oldest and most classical openings.</p>
+                <p><strong>Idea:</strong> White develops quickly with bishop to c4, targeting Black’s vulnerable f7
+                    square and
+                    preparing for rapid kingside play.</p>
+                <p><strong>Notation:</strong> 1. e4 e5 2. Nf3 Nc6 3. Bc4</p>
+                <button id="nextopening3">Next</button>
+            </dialog>
+
+            <!-- French Defense -->
+            <dialog id="openingDialog4">
+                <div>
+                    <h2>French Defense</h2>
+                    <button id="close-opening4">Close</button>
+                </div>
+                <img src="./images/french-defense.gif" alt="A french-defense demonstration" width="300" height="300">
+                <p><strong>History:</strong> First recorded in correspondence games between London and Paris in 1834,
+                    hence the
+                    name. It became a major defensive weapon for Black.</p>
+                <p><strong>Idea:</strong> Black responds to 1.e4 with 1...e6, aiming to counterattack the center with
+                    d5. It often
+                    leads to solid but somewhat cramped positions.</p>
+                <p><strong>Notation:</strong> 1. e4 e6 2. d4 d5</p>
+                <button id="nextopening4">Next</button>
+            </dialog>
+
+            <!-- Queen's Gambit -->
+            <dialog id="openingDialog5">
+                <div>
+                    <h2>Queen’s Gambit</h2>
+                    <button id="close-opening5">Close</button>
+                </div>
+                <img src="./images/queens-gambit.gif" alt="a queens-gambit demonstration" width="300" height="300">
+                <p><strong>History:</strong> Documented as early as the 15th century, but popularized in modern times by
+                    world
+                    champions like Capablanca and Kasparov. It’s one of the most respected openings for White.</p>
+                <p><strong>Idea:</strong> White offers a pawn on c4 to divert Black’s d5 pawn, aiming for long‑term
+                    central control
+                    and space advantage.</p>
+                <p><strong>Notation:</strong> 1. d4 d5 2. c4</p>
+                <button id="nextopening5">Next</button>
+            </dialog>
+
+            <!-- Sicilian Defense -->
+            <dialog id="openingDialog6">
+                <div>
+                    <h2>Sicilian Defense</h2>
+                    <button id="close-opening6">Close</button>
+                </div>
+                <img src="./images/sicillian-def.gif" alt="a sicillian-defense demonstration" width="300" height="300">
+                <p><strong>History:</strong> First analyzed in the 16th century by Italian priest Pietro Carrera, later
+                    refined by
+                    modern masters. It’s the most popular response to 1.e4 at the highest levels.</p>
+                <p><strong>Idea:</strong> Black plays 1...c5 to immediately contest the center from the flank, creating
+                    asymmetrical
+                    positions and dynamic counterplay.</p>
+                <p><strong>Notation:</strong> 1. e4 c5</p>
+                <button id="finish-opening">Finish</button>
+            </dialog>
+
+            <!-- Lesson: Tactics and Strategy -->
+            <section id="Tactics-n-strategy">
+                <img src="./images/tactics-n-strategy.svg" alt="A tactics and strategy emblem" width="200" height="200">
+                <p>Understand how to protect your king, recognize threats, and deliver checkmate with strategic
+                    precision.</p>
+                <button id="Tactics-n-strategy-button">Learn more</button>
+            </section>
+
+            <!-- Forks -->
+            <dialog id="tacticsDialog1">
+                <div>
+                    <h2>Forks</h2> <button id="close-tactics1">Close</button>
+                </div>
+                <img src="./images/tactic-fork.webp" alt="A display of a fork" width="300" height="300">
+                <p><strong>History:</strong> Forks are one of the oldest tactical motifs, recognized since early chess
+                    manuals.</p>
+                <p><strong>Idea:</strong> A single piece attacks two or more enemy pieces at once, forcing material
+                    gain.</p>
+                <p><strong>Notation Example:</strong> Nf7+ (knight forks king and rook).</p> <button
+                    id="nexttactics1">Next</button>
+            </dialog>
+
+            <!-- Pins -->
+            <dialog id="tacticsDialog2">
+                <div>
+                    <h2>Pins</h2> <button id="close-tactics2">Close</button>
+                </div>
+                <img src="./images/tactic-pin.webp" alt="A display of a pin" width="300" height="300">
+                <p><strong>History:</strong> Documented in 18th‑century play, pins remain one of the most common
+                    tactical motifs.
+                </p>
+                <p><strong>Idea:</strong> A piece cannot move without exposing a more valuable piece behind it.</p>
+                <p><strong>Notation Example:</strong> Bb5 (bishop pins knight to king).</p> <button
+                    id="nexttactics2">Next</button>
+            </dialog>
+
+            <!-- Outposts -->
+            <dialog id="tacticsDialog4">
+                <div>
+                    <h2>Outposts</h2> <button id="close-tactics4">Close</button>
+                </div>
+                <img src="./images/tactic-outpost.webp" alt="An image of an outpost" width="300" height="300">
+                <p><strong>History:</strong> A strategic concept emphasized by Nimzowitsch in “My System.”</p>
+                <p><strong>Idea:</strong> Secure squares (often protected by pawns) where knights or bishops dominate.
+                </p>
+                <p><strong>Notation Example:</strong> Nd5 (knight occupies central outpost).</p> <button
+                    id="finish-tactics">Finish</button>
+            </dialog>
+
+
+            <!-- Lesson: Endgame Fundamentals -->
+            <section id="endgame-fundamentals">
+                <img src="./images/endgame-fundamentals.svg" alt="A endgame fundamentals emblem" width="200"
+                    height="200">
+                <p>Mastering the endgame is essential for converting advantages into victory. Learn how to promote
+                    pawns, coordinate your
+                    king and rook, and apply key techniques like opposition and zugzwang to outmaneuver your opponent
+                    when few pieces
+                    remain.</p>
+                <button id="endgame-fundamentals-button">Learn more</button>
+            </section>
+
+
+            <!-- Pawn Promotion -->
+            <dialog id="endgameDialog1">
+                <div>
+                    <h2>Pawn Promotion</h2> <button id="close-endgame1">Close</button>
+                </div> <img src="./images/endgame-pawn-promotion.webp" alt="Pawn promotion example" width="300"
+                    height="300">
+                <p><strong>History:</strong> Pawn promotion has been part of chess since its earliest forms, symbolizing
+                    the growth
+                    of the weakest piece into the strongest.</p>
+                <p><strong>Idea:</strong> When a pawn reaches the opposite side of the board, it can be promoted to a
+                    queen, rook,
+                    bishop, or knight — usually a queen.</p>
+                <p><strong>Notation Example:</strong> e8=Q (pawn promotes to queen).</p> <button
+                    id="nextendgame1">Next</button>
+            </dialog> <!-- Opposition -->
+            <dialog id="endgameDialog2">
+                <div>
+                    <h2>Opposition</h2> <button id="close-endgame2">Close</button>
+                </div> <img src="./images/endgame-opposition.webp" alt="King opposition example" width="300"
+                    height="300">
+                <p><strong>History:</strong> Opposition is a classic king maneuver studied in endgame theory for
+                    centuries.</p>
+                <p><strong>Idea:</strong> One king directly faces the other with a single square between them,
+                    controlling the key
+                    squares and forcing the opponent back.</p>
+                <p><strong>Notation Example:</strong> Kd4 vs Kd6 (White king takes the opposition).</p> <button
+                    id="nextendgame2">Next</button>
+            </dialog> <!-- Rook Activity -->
+            <dialog id="endgameDialog3">
+                <div>
+                    <h2>Rook Activity</h2> <button id="close-endgame3">Close</button>
+                </div> <img src="./images/endgame-rook.webp" alt="Active rook example" width="300" height="300">
+                <p><strong>History:</strong> Rook endgames are the most common type of endgame, deeply analyzed by
+                    masters like
+                    Capablanca.</p>
+                <p><strong>Idea:</strong> An active rook behind passed pawns or on open files is far stronger than a
+                    passive rook.
+                </p>
+                <p><strong>Notation Example:</strong> Rb8 (rook moves behind the pawn to support promotion).</p> <button
+                    id="finish-endgame">Finish</button>
+            </dialog>
+
+
+            <section id="featured-lesson">
+                <h2>Featured Lesson</h2>
+                <article>
+                    <h3>How to Checkmate with a Queen and King</h3>
+                    <p>Step-by-step guide with diagrams.</p> <a href="https://youtu.be/CSA9se6t82I">Start
+                        Lesson</a>
+                </article>
+                <article>
+                    <h3>How to en Passant</h3>
+                    <p>Step-by-step guide with diagrams <a href="https://youtu.be/c_KRIH0wnhE">Start Lesson</a></p>
+                </article>
+            </section>
+
+            <section id="puzzleOfTheDay">
+                <iframe src="https://lichess.org/training/daily" width="600" height="400" frameborder="0"> </iframe>
+                <!-- Inject js in here -->
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <h3>Connect with us</h3>
+        <div class="socials">
+            <a href="https://www.facebook.com/kevin.mbemba.208794" target="_blank">
+                <img src="./images/facebook-brands-solid-full.svg" alt="Facebook icon" width="60" height="60">
+            </a>
+
+            <a href="https://github.com/snipercoder96" target="_blank">
+                <img src="./images/github-brands-solid-full.svg" alt="GitHub icon" width="60" height="60">
+            </a>
+
+            <a href="https://www.linkedin.com/in/summer-soldiertm-4a49502b6" target="_blank">
+                <img src="./images/linkedin-brands-solid-full.svg" alt="LinkedIn icon" width="60" height="60">
+            </a>
+        </div>
+        <p>&copy;
+            <span id="year"></span> | PawnSchool. All rights reserved. | Last Modified : <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -64,10 +64,10 @@
         <h2>Chess Basics</h2> 
         <p>Chess is played on an 8x8 board with 16 pieces per side. The goal is to checkmate the opponent’s king.</p> 
         <ul> 
-            <li>Pawns move forward but capture diagonally.</li> 
-            <li>Knights move in an L-shape.</li> <li>Bishops move diagonally.</li> 
-            <li>Rooks move horizontally or vertically.</li> <li>Queens move in any direction.</li> 
-            <li>Kings move one square in any direction.</li> 
+          <li>Pawns move forward but capture diagonally.</li> 
+          <li>Knights move in an L-shape.</li> <li>Bishops move diagonally.</li> 
+          <li>Rooks move horizontally or vertically.</li> <li>Queens move in any direction.</li> 
+          <li>Kings move one square in any direction.</li> 
         </ul> 
     </section>
 </main>
