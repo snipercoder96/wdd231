@@ -119,6 +119,25 @@
         grid-area: title;
         padding-left: 1rem;
     }
+
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .interest-cards img:hover {
+        animation: blink 3s infinite ease-in-out;
+    }
     
     .interest-cards img{
         width: 100%;
