@@ -15,13 +15,13 @@ async function puzzleOfDay() {
         <p><strong>Solution Moves:</strong> ${puzzle.puzzle.solution.join(", ")}</p>
         <p><strong>Puzzle link at:</strong> <a href="https://lichess.org/training/${puzzle.puzzle.id}">Link here</a></p>
         `;
-    } catch (error){
+    } catch (error) {
         const section = document.getElementById("puzzleOfTheDay");
-        section.innerHTML = 
-        `Error found: ${error}`;
+        section.innerHTML =
+            `Error found: ${error}`;
     }
-    
+
 }
 
 
-export {puzzleOfDay};
+export { puzzleOfDay };

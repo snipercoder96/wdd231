@@ -3,7 +3,7 @@ function basicMovements() {
     const startButton = document.getElementById("basic-movements-button");
     const modal1 = document.getElementById("modal1");
 
-    startButton.addEventListener("click", () => {
+    startButton.addEventListener("click", () =>{
         modal1.showModal();
     });
 

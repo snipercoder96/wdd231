@@ -91,15 +91,14 @@
     header {
         display: grid;
         grid-template-columns: 28px auto 32px;
-        background: transparent;
+        background: linear-gradient(to right, var(--chess-black-trans), var(--chess-dark-gray-trans));
         column-gap: 1.5rem;
         padding: 1rem;
         background-size: cover;
         width: 100%;
         position: relative;
+        backdrop-filter: blur(8px);
     }
-
-
 
     header img {
         width: 100%;
@@ -130,6 +129,8 @@
         flex-direction: column;
         justify-content: flex-start;
         gap: 1rem;
+        background: linear-gradient(to right, var(--chess-black-trans), var(--chess-dark-gray-trans));
+        backdrop-filter: blur(8px);
     }
 
     #nav-toggle .current {
@@ -207,6 +208,10 @@
         border-radius: 8px;
         background-color: inherit;
         color: var(--chess-white);
+    }
+
+    .hero-image{
+        margin-top: 80px;
     }
 
     .hero-image img {

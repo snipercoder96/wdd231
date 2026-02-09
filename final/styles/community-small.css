@@ -17,6 +17,7 @@
     --chess-gold: #d4af37;
     /* background-color: default, hover effects: button, nav*/
 
+    --chess-form-red: red;
 
     --chess-green: #228B22;
     /*heading */
@@ -29,34 +30,54 @@
 }
 
 @media screen and (max-width: 1000px) {
-
     *,
     *::before,
-    *::after{
+    *::after {
         box-sizing: border-box;
     }
 
-    html{
+    html {
         margin: 0;
         padding: 0;
     }
 
     h1,
     h2,
-    h3{
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: var(--heading-font);
+        color: var(--chess-light-green);
+        padding-left: 1rem;
+    }
+
+    main{
+        margin-top: 120px;
+        height: 100%;
+        width: 100%;
     }
 
     p,
     span,
-    a{
+    a,
+    button,
+    ul,
+    ol {
         font-family: var(--body-font);
+        color: var(--chess-white);
     }
 
-    
+    p,
+    a {
+        padding-left: 1rem;
+    }
 
+    button {
+        margin-left: 1rem;
+    }
 
-    body{
+    body {
         background: url("../images/chess-background.webp");
         background-position: center;
         background-size: cover;
@@ -64,6 +85,14 @@
         margin: 0;
         padding: 0;
         width: 100%;
+    }
+
+    .persistent-nav {
+        top: 0;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        
     }
 
     header {
@@ -78,12 +107,7 @@
         backdrop-filter: blur(8px);
     }
 
-    .persistent-nav{
-        top: 0;
-        position: fixed;
-        z-index: 2;
-        width: 100%;
-    }
+
 
     header img {
         width: 100%;
@@ -91,7 +115,8 @@
         overflow: hidden;
     }
 
-    header h1{
+
+    header h1 {
         display: inline;
         margin: .5rem 0 0 2rem;
         color: var(--chess-white);
@@ -109,7 +134,7 @@
         width: 100%;
     }
 
-    #nav-toggle.show{
+    #nav-toggle.show {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -118,12 +143,12 @@
         backdrop-filter: blur(8px);
     }
 
-    #nav-toggle .current{
+    #nav-toggle .current {
         border-bottom: none;
         background: var(--chess-green);
     }
 
-    #nav-toggle.show a{
+    #nav-toggle.show a {
         color: var(--chess-white);
         text-decoration: none;
         border-bottom: solid 1px var(--chess-white);
@@ -181,7 +206,7 @@
         }
     }
 
-    #toggle-button{
+    #toggle-button {
         display: block;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         border: none;
@@ -195,101 +220,105 @@
         color: var(--chess-white);
     }
 
-    .hero{
-        display: block;
+    .hero-image img {
         width: 100%;
-        position:  relative;
-        margin: 80px auto;
-        padding: 0;
     }
 
-    .hero img {
-        display: block;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        margin: 0 auto;
-        object-fit: contain;
-    }
-
-    .insert-into-hero{
-        position: absolute;
-        background-color: var(--chess-dark-gray-trans);
-        bottom: 22%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        padding: 1rem;
-        width: 100%;
-        text-align: center;
-        backdrop-filter: blur(2px);
-    }
-
-    .insert-into-hero h1{
-        color: var(--chess-light-green);
-        font-size: 2.4rem;
-        margin: 0;
-        padding: 1rem;
-        font-weight: 800;
-    }
-    .insert-into-hero p,
-    .insert-into-hero a{
-        color: var(--chess-white);
-        font-size: 1.2rem;
-        margin: 0;
-        padding: 1rem 1rem 2.5rem;
-    }
-
-    .insert-into-hero a{
+    #openModal{
         background-color: var(--chess-green);
         padding: 1rem;
-        text-decoration: none;
-        border: solid 1px var(--chess-white);
-        border-radius: 6px;
+        width: 150px;
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 40px;
+    }
+
+    #signUpForm{
+        background-color: var(--chess-dark-gray);
+        padding: 1rem;
+        border: solid 1px var(--chess-white-trans);
+        border-radius: 8px;
+    }
+
+    #signUpForm::backdrop{
+        backdrop-filter: blur(5px);
+    }
+
+    #signUpForm > section > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: .5rem;
+    }
+
+    #signUpForm > section #closeSignIn{
+        background-color: var(--chess-green);
+        width: 130px;
+        height: 50px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    #signUpForm > section form label{
         color: var(--chess-white);
+        display: block;
     }
 
-    main > h1{
+    #signUpForm > section form legend{
         color: var(--chess-light-green);
-        padding-left: 1rem;
-        font-size: 2.5rem;
     }
 
-    .cards{
+    #signUpForm > section form input,
+    #signUpForm > section form select{
+        display: block;
+        margin: 0 0 20px;
+        height: 44px;
+        width: 100%;
+        border-radius: 6px;
+        padding: .5rem;
+    }
+
+    #signUpForm > section form button{
+        margin-left: 0;
+        width: 100px;
+        padding: .8rem;
+        background-color: var(--chess-green);
+        border: none;
+        border-radius: 8px;
+    }
+
+    #signUpForm > section form fieldset{
         padding: 1rem;
     }
 
-    .cards article h2{
-        color: var(--chess-light-green);
-        font-size: 2rem;
+    #signUpForm > section form input[required]{
+        border-left: solid 4px var(--chess-form-red);
     }
 
-    .cards article p{
-        color: var(--chess-white);
-        font-size: 1.3rem;
-    }
-
-    .socials{
+    .socials {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
 
-    footer{
+    footer {
         background: linear-gradient(to right, var(--chess-black-trans), var(--chess-dark-gray-trans));
         padding: 1rem;
     }
 
-    footer h3{
+    footer h3 {
         text-align: center;
         color: var(--chess-light-green);
     }
 
 
     footer p,
-    footer span{
+    footer span {
         color: var(--chess-white);
     }
 
-    
+
+
 }
