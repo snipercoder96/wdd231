@@ -1,22 +1,14 @@
+@media screen and (min-width:1001px) {
 
-
-
-
-@media screen and (min-width: 1001px){
     *,
     *::before,
     *::after {
         box-sizing: border-box;
     }
 
-    html {
-        height: 100%;
-    }
-
     body {
         margin: 0;
         padding: 0;
-        padding-top: 140px;
         background-image: url("../images/chess-background.webp");
         background-repeat: no-repeat;
         background-position: center;
@@ -35,13 +27,12 @@
     h3 {
         font-family: var(--heading-font);
         color: var(--chess-light-green);
-        padding: 0 0 0 1rem;
+        padding-left: 1rem;
     }
 
-
-
-    .leaderboards{
-        margin-top: 0;
+    .confirmation-message {
+        margin-top: 160px;
+        margin-bottom: 30px;
     }
 
     p,
@@ -49,11 +40,7 @@
     a {
         font-family: var(--body-font);
         color: var(--chess-white);
-        padding:  0 0 0 1rem;
-    }
-
-    ul{
-        color: var(--chess-white);
+        padding-left: 1rem;
     }
 
     header {
@@ -90,8 +77,6 @@
         border-top: solid 1px var(--chess-white);
     }
 
-
-
     #nav-toggle a {
         color: var(--chess-white);
         text-decoration: none;
@@ -115,6 +100,14 @@
         transition: all 0.5s ease-in-out;
     }
 
+    .hero {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin: .1rem auto;
+        padding: 0;
+    }
+
     .persistent-nav {
         top: 0;
         position: fixed;
@@ -122,90 +115,46 @@
         width: 100%;
     }
 
-    #openModal{
-        padding: .8rem;
-        width: 120px;
-        margin-left: 1rem;
-        background-color: var(--chess-green);
-        color: var(--chess-white);
-        border-radius: 8px;
-        border: none;
-        cursor: pointer;
-        margin-bottom: 1rem;
-    }
 
-    #openModal:hover{
-        background-color: var(--chess-gold);
-    }
-
-    #signUpForm{
-        padding: 1rem;
-        background-color: var(--chess-dark-gray);
-        border: solid 1px var(--chess-white);
-        border-radius: 8px;
-    }
-
-    #signUpForm::backdrop{
-        backdrop-filter: blur(5px);
-    }
-
-    #signUpForm>section>div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: .5rem;
-        gap: 1.5rem;
-    }
-
-    #signUpForm>section #closeSignIn {
-        background-color: var(--chess-green);
-        width: 100px;
-        height: 50px;
-        margin-top: 10px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        color: var(--chess-white);
-    }
-
-    #signUpForm>section form label {
-        color: var(--chess-white);
+    .hero img {
         display: block;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
     }
 
-    #signUpForm>section form legend {
-        color: var(--chess-light-green);
-    }
-
-    #signUpForm>section form input,
-    #signUpForm>section form select {
+    section img {
         display: block;
-        margin: 0 0 20px;
-        height: 44px;
-        width: 50%;
-        border-radius: 6px;
-        padding: .5rem;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 10px solid var(--chess-black);
+        animation: zoomIn 5s ease-in-out infinite;
     }
 
-    #signUpForm>section form button[type="submit"] {
-        margin-left: 0;
-        width: 100px;
-        padding: .8rem;
-        background-color: var(--chess-green);
-        border: none;
-        border-radius: 8px;
-        color: white;
-        cursor: pointer;
+    @keyframes zoomIn {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        50% {
+            transform: scale(1.1);
+            opacity: 0.7;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
     }
 
-    #signUpForm>section form fieldset {
-        padding: 1rem;
+    main>section>h2 {
+        text-align: center;
+        margin-bottom: 2em;
     }
-
-    #signUpForm>section form input[required] {
-        border-left: solid 4px var(--chess-form-red);
-    }
-
 
     .socials {
         display: flex;
@@ -237,5 +186,7 @@
         color: var(--chess-white);
         text-align: center;
     }
+
+
 
 }

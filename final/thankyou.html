@@ -5,26 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PawnSchool | Thank You</title>
-    <!-- Add your CSS link here -->
+    <!-- CSS link here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/ty-small.css">
+    <link rel="stylesheet" href="./styles/ty.large.css">
+
+
+    <!-- Js here-->
+    <script type="module" src="./scripts/thankyou.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>PawnSchool</h1>
-        <!-- Optional: navigation or logo -->
-    </header>
+    <div class="persistent-nav">
+        <header>
+            <img src="./images/chess-favicon.svg" alt="A logo" width="50" height="50">
+            <h1 class="logo">PawnSchool</h1>
+            <nav id="nav-toggle">
+                <a href="./index.html" aria-current="page" class="current">Home</a>
+                <a href="./learn.html">Learn</a>
+                <a href="./community.html">Community</a>
+            </nav>
+            <button id="toggle-button" aria-label="navigation">&#9776;</button>
+        </header>
+    </div>
 
     <main>
         <section class="confirmation-message">
             <h2>Thank You!</h2>
+            <img src="./images/pawn-emblem.svg" alt="A pawn svg icon">
             <p>Your submission has been received.</p>
-            <p>You’ll be redirected shortly, or you can continue below.</p>
-            <a href="YOUR_CONFIRMATION_PAGE_URL" class="btn">Go to Confirmation Page</a>
+            <p>The details are:<br></p>
+            <div id="confirmationInfo">
+                <!--inject js in here-->
+            </div>
+            <a href="./index.html" class="btn">Go back to home page</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 PawnSchool. All rights reserved.</p>
+        <h3>Connect with us</h3>
+        <div class="socials">
+            <a href="https://www.facebook.com/kevin.mbemba.208794" target="_blank">
+                <img src="./images/facebook-brands-solid-full.svg" alt="Facebook icon" width="60" height="60">
+            </a>
+    
+            <a href="https://github.com/snipercoder96" target="_blank">
+                <img src="./images/github-brands-solid-full.svg" alt="GitHub icon" width="60" height="60">
+            </a>
+    
+            <a href="https://www.linkedin.com/in/summer-soldiertm-4a49502b6" target="_blank">
+                <img src="./images/linkedin-brands-solid-full.svg" alt="LinkedIn icon" width="60" height="60">
+            </a>
+        </div>
+        <p>&copy;
+            <span id="year"></span> | PawnSchool. All rights reserved. | Last Modified : <span id="lastModified"></span>
+        </p>
     </footer>
 </body>
 

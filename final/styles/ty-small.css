@@ -28,6 +28,7 @@
     --body-font: 'Roboto', sans-serif;
 }
 
+
 @media screen and (max-width: 1000px) {
 
     *,
@@ -36,25 +37,28 @@
         box-sizing: border-box;
     }
 
-    html {
-        margin: 0;
-        padding: 0;
-    }
-
     h1,
     h2,
     h3 {
         font-family: var(--heading-font);
+        color: var(--chess-light-green);
+        padding-left: 1rem;
     }
 
     p,
     span,
     a {
         font-family: var(--body-font);
+        color: var(--chess-white);
+        padding-left: 1rem;
     }
 
 
 
+
+    html {
+        height: 100%;
+    }
 
     body {
         background: url("../images/chess-background.webp");
@@ -64,6 +68,13 @@
         margin: 0;
         padding: 0;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex: 1;
     }
 
     header {
@@ -76,13 +87,6 @@
         width: 100%;
         position: relative;
         backdrop-filter: blur(8px);
-    }
-
-    .persistent-nav {
-        top: 0;
-        position: fixed;
-        z-index: 2;
-        width: 100%;
     }
 
     header img {
@@ -101,15 +105,13 @@
     #nav-toggle {
         position: absolute;
         top: 80px;
-        left: 0;
-        right: 0;
-        background: linear-gradient(to right, var(--chess-black-trans), var(--chess-dark-gray-trans));
+        left: auto;
+        background: linear-gradient(to right, var(--chess-black), var(--chess-dark-gray));
         padding: 1rem;
         border-radius: 5px;
         display: none;
         z-index: 1;
-        backdrop-filter: blur(8px);
-        isolation: isolate;
+        width: 100%;
     }
 
     #nav-toggle.show {
@@ -118,10 +120,7 @@
         justify-content: flex-start;
         gap: 1rem;
         background: linear-gradient(to right, var(--chess-black-trans), var(--chess-dark-gray-trans));
-        backdrop-filter: blur(12px);
-        will-change: backdrop-filter;
-        isolation: isolate;
-        transform: translateZ(0);
+        backdrop-filter: blur(8px);
     }
 
     #nav-toggle .current {
@@ -202,78 +201,31 @@
         cursor: pointer;
     }
 
-    .hero {
+    section img {
         display: block;
-        width: 100%;
-        position: relative;
-        margin: 80px auto;
-        padding: 0;
-    }
-
-    .hero img {
-        display: block;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
+        width: 200px;
+        height: 200px;
         margin: 0 auto;
-        object-fit: contain;
+        border-radius: 50%;
+        border: 10px solid var(--chess-black);
+        animation: zoomIn 5s ease-in-out infinite;
     }
 
-    .insert-into-hero {
-        position: absolute;
-        background-color: var(--chess-dark-gray-trans);
-        bottom: 22%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        padding: 1rem;
-        width: 100%;
-        text-align: center;
-        backdrop-filter: blur(2px);
-    }
+    @keyframes zoomIn {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
 
-    .insert-into-hero h1 {
-        color: var(--chess-light-green);
-        font-size: 2.4rem;
-        margin: 0;
-        padding: 1rem;
-        font-weight: 800;
-    }
+        50% {
+            transform: scale(1.1);
+            opacity: 0.7;
+        }
 
-    .insert-into-hero p,
-    .insert-into-hero a {
-        color: var(--chess-white);
-        font-size: 1.2rem;
-        margin: 0;
-        padding: 1rem 1rem 2.5rem;
-    }
-
-    .insert-into-hero a {
-        background-color: var(--chess-green);
-        padding: 1rem;
-        text-decoration: none;
-        border: solid 1px var(--chess-white);
-        border-radius: 6px;
-        color: var(--chess-white);
-    }
-
-    main>h1 {
-        color: var(--chess-light-green);
-        padding-left: 1rem;
-        font-size: 2.5rem;
-    }
-
-    .cards {
-        padding: 1rem;
-    }
-
-    .cards article h2 {
-        color: var(--chess-light-green);
-        font-size: 2rem;
-    }
-
-    .cards article p {
-        color: var(--chess-white);
-        font-size: 1.3rem;
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
     }
 
     .socials {
@@ -286,6 +238,7 @@
     footer {
         background: linear-gradient(to right, var(--chess-black-trans), var(--chess-dark-gray-trans));
         padding: 1rem;
+        margin-top: auto;
     }
 
     footer h3 {
@@ -298,6 +251,4 @@
     footer span {
         color: var(--chess-white);
     }
-
-
 }

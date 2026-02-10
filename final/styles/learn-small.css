@@ -90,9 +90,9 @@
 
     header {
         display: grid;
-        grid-template-columns: 28px auto 32px;
+        grid-template-columns: 50px auto 50px;
         background: linear-gradient(to right, var(--chess-black-trans), var(--chess-dark-gray-trans));
-        column-gap: 1.5rem;
+        align-items: center;
         padding: 1rem;
         background-size: cover;
         width: 100%;
@@ -108,20 +108,23 @@
 
     header h1 {
         display: inline;
-        margin: .5rem 0 0 2rem;
+        margin: 0;
+        text-align: center;
         color: var(--chess-white);
     }
 
     #nav-toggle {
         position: absolute;
         top: 80px;
-        left: auto;
-        background: linear-gradient(to right, var(--chess-black), var(--chess-dark-gray));
+        left: 0;
+        right: 0;
+        background: linear-gradient(to right, var(--chess-black-trans), var(--chess-dark-gray-trans));
         padding: 1rem;
         border-radius: 5px;
         display: none;
         z-index: 1;
-        width: 100%;
+        backdrop-filter: blur(8px);
+        isolation: isolate;
     }
 
     #nav-toggle.show {
@@ -130,7 +133,10 @@
         justify-content: flex-start;
         gap: 1rem;
         background: linear-gradient(to right, var(--chess-black-trans), var(--chess-dark-gray-trans));
-        backdrop-filter: blur(8px);
+        backdrop-filter: blur(12px);
+        will-change: backdrop-filter;
+        isolation: isolate;
+        transform: translateZ(0);
     }
 
     #nav-toggle .current {
@@ -206,16 +212,18 @@
         margin-right: 1rem;
         padding: .5rem;
         border-radius: 8px;
-        background-color: inherit;
+        background-color: transparent;
         color: var(--chess-white);
+        cursor: pointer;
     }
 
-    .hero-image{
+    .hero-image {
         margin-top: 80px;
     }
 
     .hero-image img {
         width: 100%;
+        height: auto;
     }
 
     #display-grid {

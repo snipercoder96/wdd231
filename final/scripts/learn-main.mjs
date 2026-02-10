@@ -1,9 +1,11 @@
 import { basicMovements, openingPrinciples, tacticsAndStrategy, endgameFundamentals } from "./chess-lessons.mjs";
 import { hamburgerButton } from "./hamurger.mjs";
 import { footer } from "./footer.mjs";
+import { puzzleOfDay } from "./puzzle-of-day.mjs";
 basicMovements();
 openingPrinciples();
 tacticsAndStrategy();
 endgameFundamentals();
+puzzleOfDay();
 hamburgerButton("toggle-button", "nav-toggle");
 footer("year", "lastModified");
