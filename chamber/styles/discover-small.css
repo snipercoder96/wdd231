@@ -152,10 +152,12 @@
 
     .interest-cards address {
         grid-area: address;
+        color: var(--text-col);
     }
 
     .interest-cards p {
         grid-area: description;
+        color: var(--text-col);
     }
 
 
