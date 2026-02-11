@@ -40,11 +40,6 @@
     body {
         margin: 0;
         padding: 0;
-        background-image: url("../images/chess-background.webp");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
     }
 
     /* When using an explicit <img class="bg-image"> make it cover the viewport */
