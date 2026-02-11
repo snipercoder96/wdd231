@@ -40,6 +40,7 @@
     body {
         margin: 0;
         padding: 0;
+        background: var(--chess-black);
     }
 
     /* When using an explicit <img class="bg-image"> make it cover the viewport */
