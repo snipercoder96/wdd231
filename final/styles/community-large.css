@@ -24,10 +24,15 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+        background-color: var(--chess-black);
+        color: var(--chess-white);
     }
 
     /* Ensure sections are transparent so body background shows through */
-    section, main, .join, .leaderboards {
+    section,
+    main,
+    .join,
+    .leaderboards {
         background: transparent;
     }
 
@@ -65,7 +70,7 @@
         background: rgba(0, 0, 0, 0.25);
         border-radius: 6px;
         margin-bottom: 0.6rem;
-        box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset;
     }
 
     .player-name {
@@ -101,12 +106,19 @@
     }
 
     @media (max-width: 1200px) {
-        .leaderboard-item { grid-template-columns: 1fr 160px; }
+        .leaderboard-item {
+            grid-template-columns: 1fr 160px;
+        }
     }
 
     @media (max-width: 1000px) {
-        .leaderboard-item { grid-template-columns: 1fr; }
-        .player-meta { justify-content: flex-start; }
+        .leaderboard-item {
+            grid-template-columns: 1fr;
+        }
+
+        .player-meta {
+            justify-content: flex-start;
+        }
     }
 
     /* Toggle button for showing more players */
@@ -118,6 +130,8 @@
         border: none;
         border-radius: 6px;
         cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 700;
     }
 
     #toggle-leaderboard:hover {
@@ -213,6 +227,8 @@
         border: none;
         cursor: pointer;
         margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: 700;
     }
 
     #openModal:hover {

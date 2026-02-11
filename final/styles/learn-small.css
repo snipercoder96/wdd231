@@ -80,6 +80,8 @@
         margin: 0;
         padding: 0;
         width: 100%;
+        background-color: var(--chess-black);
+        color: var(--chess-white);
     }
 
     .persistent-nav {
@@ -211,6 +213,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         border: none;
         font-size: 1.3rem;
+        font-weight: 700;
         width: 50px;
         height: auto;
         margin-right: 1rem;
@@ -259,6 +262,8 @@
         border-radius: 8px;
         width: 200px;
         border: none;
+        font-size: 1.2rem;
+        font-weight: 700;
     }
 
     #display-grid dialog {

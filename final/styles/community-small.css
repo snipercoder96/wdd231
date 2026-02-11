@@ -90,6 +90,8 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+        background-color: var(--chess-black);
+        color: var(--chess-white);
     }
 
     .persistent-nav {
@@ -333,6 +335,8 @@
         border: none;
         border-radius: 6px;
         cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 700;
     }
 
     .socials {
