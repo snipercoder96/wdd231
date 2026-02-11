@@ -201,8 +201,9 @@
     main>h1 {
         color: var(--chess-light-green);
         padding-left: 1rem;
-        font-size: 2.5rem;
         text-shadow: 2px 2px 4px var(--chess-black);
+        font-size: 3rem;
+        font-weight: 800;
     }
 
     .cards {
