@@ -239,6 +239,7 @@
         width: 100%;
         text-align: center;
         backdrop-filter: blur(2px);
+        color: var(--chess-white);
     }
 
     .insert-into-hero h1 {
@@ -248,6 +249,8 @@
         padding: 1rem;
         font-weight: 800;
     }
+
+
 
     .insert-into-hero p,
     .insert-into-hero a {
@@ -262,6 +265,8 @@
         padding: 1rem;
         text-decoration: none;
         border: solid 1px var(--chess-white);
+        font-size: 1.2rem; 
+        font-weight: 700;
         border-radius: 6px;
         color: var(--chess-white);
     }
