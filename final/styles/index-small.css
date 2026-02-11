@@ -59,6 +59,7 @@
         padding: 0;
         width: 100%;
         background: var(--chess-black);
+        color: var(--chess-white);
     }
 
     .bg-image {
