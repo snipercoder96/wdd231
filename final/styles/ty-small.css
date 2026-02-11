@@ -124,10 +124,7 @@
         backdrop-filter: blur(8px);
     }
 
-    #nav-toggle .current {
-        border-bottom: none;
-        background: var(--chess-green);
-    }
+    
 
     #nav-toggle.show a {
         color: var(--chess-white);

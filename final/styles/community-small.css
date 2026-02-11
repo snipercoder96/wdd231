@@ -150,10 +150,13 @@
 
     #nav-toggle .current {
         border-bottom: none;
-        background: var(--chess-green);
+        background: var(--chess-light-green);
+        padding: 1rem 0 1rem;
+        color: var(--chess-black);
+        text-decoration: none;
     }
 
-    #nav-toggle.show a {
+    #nav-toggle.show a:not(:nth-of-type(3)) {
         color: var(--chess-white);
         text-decoration: none;
         border-bottom: solid 1px var(--chess-white);
