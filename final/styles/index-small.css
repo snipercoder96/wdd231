@@ -58,9 +58,10 @@
 
     body {
         background: url("../images/chess-background.webp");
-        background-position: center;
+        background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         margin: 0;
         padding: 0;
         width: 100%;

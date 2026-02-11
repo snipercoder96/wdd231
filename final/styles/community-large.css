@@ -1,8 +1,5 @@
+@media screen and (min-width: 1001px) {
 
-
-
-
-@media screen and (min-width: 1001px){
     *,
     *::before,
     *::after {
@@ -11,6 +8,7 @@
 
     html {
         height: 100%;
+        min-height: 100%;
     }
 
     body {
@@ -19,11 +17,18 @@
         padding-top: 140px;
         background-image: url("../images/chess-background.webp");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover;
+        background-attachment: fixed;
+        background-color: var(--chess-dark-gray);
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+    }
+
+    /* Ensure sections are transparent so body background shows through */
+    section, main, .join, .leaderboards {
+        background: transparent;
     }
 
     main {
@@ -40,8 +45,74 @@
 
 
 
-    .leaderboards{
+    .leaderboards {
         margin-top: 0;
+    }
+
+    .leaderboard-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    .leaderboard-item {
+        display: grid;
+        grid-template-columns: 1fr 220px;
+        gap: 0.5rem;
+        align-items: center;
+        padding: 0.6rem 1rem;
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        margin-bottom: 0.6rem;
+        box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset;
+    }
+
+    .player-name {
+        font-weight: 700;
+        color: var(--chess-white);
+    }
+
+    .player-name a {
+        color: var(--chess-white);
+        text-decoration: none;
+    }
+
+    .player-name a:hover {
+        text-decoration: underline;
+    }
+
+    .player-meta {
+        font-size: 0.95rem;
+        color: var(--chess-light-gray);
+        display: flex;
+        gap: 0.75rem;
+        justify-content: flex-end;
+    }
+
+    @media (max-width: 1200px) {
+        .leaderboard-item { grid-template-columns: 1fr 160px; }
+    }
+
+    @media (max-width: 1000px) {
+        .leaderboard-item { grid-template-columns: 1fr; }
+        .player-meta { justify-content: flex-start; }
+    }
+
+    /* Toggle button for showing more players */
+    #toggle-leaderboard {
+        margin-left: 1rem;
+        background-color: var(--chess-green);
+        padding: 1rem;
+        color: var(--chess-white);
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    #toggle-leaderboard:hover {
+        background-color: var(--chess-gold);
+        color: var(--chess-white);
     }
 
     p,
@@ -49,10 +120,10 @@
     a {
         font-family: var(--body-font);
         color: var(--chess-white);
-        padding:  0 0 0 1rem;
+        padding: 0 0 0 1rem;
     }
 
-    ul{
+    ul {
         color: var(--chess-white);
     }
 
@@ -122,7 +193,7 @@
         width: 100%;
     }
 
-    #openModal{
+    #openModal {
         padding: .8rem;
         width: 120px;
         margin-left: 1rem;
@@ -134,18 +205,18 @@
         margin-bottom: 1rem;
     }
 
-    #openModal:hover{
+    #openModal:hover {
         background-color: var(--chess-gold);
     }
 
-    #signUpForm{
+    #signUpForm {
         padding: 1rem;
         background-color: var(--chess-dark-gray);
         border: solid 1px var(--chess-white);
         border-radius: 8px;
     }
 
-    #signUpForm::backdrop{
+    #signUpForm::backdrop {
         backdrop-filter: blur(5px);
     }
 

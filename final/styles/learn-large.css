@@ -30,6 +30,7 @@
 
 
 @media screen and (min-width: 1001px) {
+
     *,
     *::before,
     *::after {
@@ -41,8 +42,9 @@
         padding: 0;
         background-image: url("../images/chess-background.webp");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover;
+        background-attachment: fixed;
     }
 
     h1,
@@ -70,7 +72,7 @@
     }
 
     main p,
-    main a{
+    main a {
         padding-left: 1rem;
     }
 
@@ -84,7 +86,7 @@
         color: var(--chess-white);
     }
 
-    a:hover{
+    a:hover {
         color: var(--chess-gold);
         transition: all 0.3s ease-in-out;
     }
@@ -164,7 +166,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 1rem;
-        
+
     }
 
     #display-grid section {
