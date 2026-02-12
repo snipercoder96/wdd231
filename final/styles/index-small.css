@@ -322,5 +322,13 @@
         color: var(--chess-white);
     }
 
+    footer a {
+        color: var(--chess-white);
+    }
+
+    footer a:visited{
+        color: var(--chess-gold);
+    }
+
 
 }

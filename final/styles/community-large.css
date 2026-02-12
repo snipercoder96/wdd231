@@ -335,4 +335,8 @@
         text-align: center;
     }
 
+    footer a:hover {
+        color: var(--chess-gold);
+    }
+
 }
